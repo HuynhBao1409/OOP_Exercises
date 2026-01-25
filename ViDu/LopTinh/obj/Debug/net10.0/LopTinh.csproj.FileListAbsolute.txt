@@ -1,0 +1,15 @@
+D:\Project_ABeo\OOP_Exercises\ViDu\LopTinh\bin\Debug\net10.0\LopTinh.exe
+D:\Project_ABeo\OOP_Exercises\ViDu\LopTinh\bin\Debug\net10.0\LopTinh.deps.json
+D:\Project_ABeo\OOP_Exercises\ViDu\LopTinh\bin\Debug\net10.0\LopTinh.runtimeconfig.json
+D:\Project_ABeo\OOP_Exercises\ViDu\LopTinh\bin\Debug\net10.0\LopTinh.dll
+D:\Project_ABeo\OOP_Exercises\ViDu\LopTinh\bin\Debug\net10.0\LopTinh.pdb
+D:\Project_ABeo\OOP_Exercises\ViDu\LopTinh\obj\Debug\net10.0\LopTinh.GeneratedMSBuildEditorConfig.editorconfig
+D:\Project_ABeo\OOP_Exercises\ViDu\LopTinh\obj\Debug\net10.0\LopTinh.AssemblyInfoInputs.cache
+D:\Project_ABeo\OOP_Exercises\ViDu\LopTinh\obj\Debug\net10.0\LopTinh.AssemblyInfo.cs
+D:\Project_ABeo\OOP_Exercises\ViDu\LopTinh\obj\Debug\net10.0\LopTinh.csproj.CoreCompileInputs.cache
+D:\Project_ABeo\OOP_Exercises\ViDu\LopTinh\obj\Debug\net10.0\LopTinh.sourcelink.json
+D:\Project_ABeo\OOP_Exercises\ViDu\LopTinh\obj\Debug\net10.0\LopTinh.dll
+D:\Project_ABeo\OOP_Exercises\ViDu\LopTinh\obj\Debug\net10.0\refint\LopTinh.dll
+D:\Project_ABeo\OOP_Exercises\ViDu\LopTinh\obj\Debug\net10.0\LopTinh.pdb
+D:\Project_ABeo\OOP_Exercises\ViDu\LopTinh\obj\Debug\net10.0\LopTinh.genruntimeconfig.cache
+D:\Project_ABeo\OOP_Exercises\ViDu\LopTinh\obj\Debug\net10.0\ref\LopTinh.dll

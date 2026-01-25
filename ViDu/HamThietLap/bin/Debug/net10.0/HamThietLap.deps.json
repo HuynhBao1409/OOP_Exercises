@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "HamThietLap/1.0.0": {
+        "runtime": {
+          "HamThietLap.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "HamThietLap/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

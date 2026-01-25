@@ -1,0 +1,15 @@
+D:\Project_ABeo\OOP_Exercises\ViDu\TinhBaoDong\bin\Debug\net10.0\TinhBaoDong.exe
+D:\Project_ABeo\OOP_Exercises\ViDu\TinhBaoDong\bin\Debug\net10.0\TinhBaoDong.deps.json
+D:\Project_ABeo\OOP_Exercises\ViDu\TinhBaoDong\bin\Debug\net10.0\TinhBaoDong.runtimeconfig.json
+D:\Project_ABeo\OOP_Exercises\ViDu\TinhBaoDong\bin\Debug\net10.0\TinhBaoDong.dll
+D:\Project_ABeo\OOP_Exercises\ViDu\TinhBaoDong\bin\Debug\net10.0\TinhBaoDong.pdb
+D:\Project_ABeo\OOP_Exercises\ViDu\TinhBaoDong\obj\Debug\net10.0\TinhBaoDong.GeneratedMSBuildEditorConfig.editorconfig
+D:\Project_ABeo\OOP_Exercises\ViDu\TinhBaoDong\obj\Debug\net10.0\TinhBaoDong.AssemblyInfoInputs.cache
+D:\Project_ABeo\OOP_Exercises\ViDu\TinhBaoDong\obj\Debug\net10.0\TinhBaoDong.AssemblyInfo.cs
+D:\Project_ABeo\OOP_Exercises\ViDu\TinhBaoDong\obj\Debug\net10.0\TinhBaoDong.csproj.CoreCompileInputs.cache
+D:\Project_ABeo\OOP_Exercises\ViDu\TinhBaoDong\obj\Debug\net10.0\TinhBaoDong.sourcelink.json
+D:\Project_ABeo\OOP_Exercises\ViDu\TinhBaoDong\obj\Debug\net10.0\TinhBaoDong.dll
+D:\Project_ABeo\OOP_Exercises\ViDu\TinhBaoDong\obj\Debug\net10.0\refint\TinhBaoDong.dll
+D:\Project_ABeo\OOP_Exercises\ViDu\TinhBaoDong\obj\Debug\net10.0\TinhBaoDong.pdb
+D:\Project_ABeo\OOP_Exercises\ViDu\TinhBaoDong\obj\Debug\net10.0\TinhBaoDong.genruntimeconfig.cache
+D:\Project_ABeo\OOP_Exercises\ViDu\TinhBaoDong\obj\Debug\net10.0\ref\TinhBaoDong.dll

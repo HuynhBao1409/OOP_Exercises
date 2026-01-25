@@ -1,0 +1,28 @@
+Tạo project C# VScode
+*C#
+*Tạo project nhanh: 
+dotnet new console -n TenBai
+code . (mở project)
+-----Tạo mới project trong VS (làm xong bài muốn tạo Project mới)
+cd .. (về thu mục cha) tạp như BTH
+
+*Visual code: mở Console và triển
+
+************************
+Tạo đối tượng
+Cú pháp: <Tên Lớp> <Tên ĐTượng cần tạo> = new <Tên Lớp>(<Tham số qq j đấy>);
+	VD: Dog mydog = new Dog(); //Ko tham số
+		mydog.Name = ("Cau Vàng");
+		
+		Car car2 = new Car("Ford");//có tham số
+       		car2.Print();
+---------------------------HÀM THIẾT LẬP
+[public] <Tên Lớp> ([Danh sách tham số]
+{
+	// Các lệnh khởi tạo cho đối tượng
+}
+VD:file cod ViDu
+---------------------------LỚP TĨNH
+Cú pháp truy cập thành viên tĩnh:
+	 <Tên_lớp>.<Tên_thành_viên_tĩnh>
+VD: Dog.Count;

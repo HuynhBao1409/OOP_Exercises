@@ -1,0 +1,15 @@
+D:\Project_ABeo\OOP_Exercises\ViDu\HamThietLap\bin\Debug\net10.0\HamThietLap.exe
+D:\Project_ABeo\OOP_Exercises\ViDu\HamThietLap\bin\Debug\net10.0\HamThietLap.deps.json
+D:\Project_ABeo\OOP_Exercises\ViDu\HamThietLap\bin\Debug\net10.0\HamThietLap.runtimeconfig.json
+D:\Project_ABeo\OOP_Exercises\ViDu\HamThietLap\bin\Debug\net10.0\HamThietLap.dll
+D:\Project_ABeo\OOP_Exercises\ViDu\HamThietLap\bin\Debug\net10.0\HamThietLap.pdb
+D:\Project_ABeo\OOP_Exercises\ViDu\HamThietLap\obj\Debug\net10.0\HamThietLap.GeneratedMSBuildEditorConfig.editorconfig
+D:\Project_ABeo\OOP_Exercises\ViDu\HamThietLap\obj\Debug\net10.0\HamThietLap.AssemblyInfoInputs.cache
+D:\Project_ABeo\OOP_Exercises\ViDu\HamThietLap\obj\Debug\net10.0\HamThietLap.AssemblyInfo.cs
+D:\Project_ABeo\OOP_Exercises\ViDu\HamThietLap\obj\Debug\net10.0\HamThietLap.csproj.CoreCompileInputs.cache
+D:\Project_ABeo\OOP_Exercises\ViDu\HamThietLap\obj\Debug\net10.0\HamThietLap.sourcelink.json
+D:\Project_ABeo\OOP_Exercises\ViDu\HamThietLap\obj\Debug\net10.0\HamThietLap.dll
+D:\Project_ABeo\OOP_Exercises\ViDu\HamThietLap\obj\Debug\net10.0\refint\HamThietLap.dll
+D:\Project_ABeo\OOP_Exercises\ViDu\HamThietLap\obj\Debug\net10.0\HamThietLap.pdb
+D:\Project_ABeo\OOP_Exercises\ViDu\HamThietLap\obj\Debug\net10.0\HamThietLap.genruntimeconfig.cache
+D:\Project_ABeo\OOP_Exercises\ViDu\HamThietLap\obj\Debug\net10.0\ref\HamThietLap.dll
