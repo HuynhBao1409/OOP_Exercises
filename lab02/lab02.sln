@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bai2.1_PhanSo", "Bai2.1_PhanSo\Bai2.1_PhanSo.csproj", "{79D57320-DBE7-22F8-E5A9-235F090E820B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{79D57320-DBE7-22F8-E5A9-235F090E820B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79D57320-DBE7-22F8-E5A9-235F090E820B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79D57320-DBE7-22F8-E5A9-235F090E820B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79D57320-DBE7-22F8-E5A9-235F090E820B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2BCFBDBD-434F-4185-881D-E4F0C55B308F}
+	EndGlobalSection
+EndGlobal
