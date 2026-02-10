@@ -1,4 +1,11 @@
-﻿using System;
+﻿// Viết chương trình C# thực hiện các công việc sau (mỗi chức năng xây dựng thành một hàm):
+// a) Nhập một mảng n số nguyên từ bàn phím.
+// b) In các phần tử của mảng lên màn hình.
+// c) Trả về phần tử lớn nhất của mảng.
+// d) Trả về kiểu boolean kiểm tra mảng đã được sắp xếp tăng dần chưa.
+// e) Sắp xếp mảng theo thứ tự tăng dần.
+// f) Tách mảng thành 2 mảng con: một mảng chứa các phần tử chẵn, mảng còn lại chứa các phần tử lẻ.
+using System;
 
 class ThaoTacMang
 {
@@ -18,7 +25,6 @@ class ThaoTacMang
     }
 
     //b.In các phần tử của mảng lên màn hình.
-    // FIX 1: Đổi tên từ PrintArry -> PrintArray cho khớp với lời gọi trong Main
     static void PrintArray(int[] arr)
     {
         Console.Write("Mang: [");
@@ -30,14 +36,13 @@ class ThaoTacMang
                 Console.Write(", ");
             }
         }
-        Console.WriteLine(" ]"); // FIX 4: Đổi Write -> WriteLine để tự xuống hàng
+        Console.WriteLine(" ]");
     }
 
     //c.Trả về phần tử lớn nhất của mảng.
     static int FindMax(int[] arr)
     {
         int max = arr[0];
-        // FIX 2: Đổi "arr.Length - 1" -> "arr.Length" để không bỏ qua phần tử cuối
         for (int i = 1; i < arr.Length; i++)
         {
             if (arr[i] > max)
@@ -64,10 +69,9 @@ class ThaoTacMang
     //e. Sắp xếp mảng theo thứ tự tăng dần.
     static int[] SapXepTangDan(int[] arr)
     {
-        int[] sorted = (int[])arr.Clone();
+        int[] sorted = (int[])arr.Clone(); //giữ mảng gốc ban đầu
         for (int i = 0; i < sorted.Length - 1; i++)
         {
-            // FIX 3: Thêm "- i" để tối ưu Bubble Sort
             for (int j = 0; j < sorted.Length - 1 - i; j++)
             {
                 if (sorted[j] > sorted[j + 1])

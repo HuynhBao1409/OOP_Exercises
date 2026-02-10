@@ -11,7 +11,6 @@ class PhanSo
     {
         get { return _tuSo; }
         set { _tuSo = value; }
-
     }
 
     //Ttinh MauSo
@@ -46,7 +45,7 @@ class PhanSo
         return a;
     }
 
-    //Constructor mac dinh
+    //Ham khoi tao khong tham so
     public PhanSo()
     {
         _tuSo = 0;
@@ -79,12 +78,12 @@ class PhanSo
     public void Nhap()
     {
         Console.Write("Nhap tu so: ");
-        _tuSo = int.Parse(Console.ReadLine());
+        _tuSo = int.Parse(Console.ReadLine() ?? "0");
 
         do
         {
             Console.Write("Nhap mau so: ");
-            _mauSo = int.Parse(Console.ReadLine());
+            _mauSo = int.Parse(Console.ReadLine() ?? "1");
 
             if (_mauSo == 0)
             {

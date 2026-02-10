@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Bai2.1_PhanSo")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d9a5a41fe7e7fc194cf2e92113660100e6333967")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+da18933e6f1dcbefbef332984be029a783ee36ad")]
 [assembly: System.Reflection.AssemblyProductAttribute("Bai2.1_PhanSo")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Bai2.1_PhanSo")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

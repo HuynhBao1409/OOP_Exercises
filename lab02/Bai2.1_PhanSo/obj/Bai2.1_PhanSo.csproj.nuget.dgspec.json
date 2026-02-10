@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Project_ABeo\\OOP_Exercises\\lab02\\Bai2.1_PhanSO\\Bai2.1_PhanSo.csproj": {}
+    "D:\\Project_ABeo\\OOP_Exercises\\lab02\\Bai2.1_PhanSo\\Bai2.1_PhanSo.csproj": {}
   },
   "projects": {
-    "D:\\Project_ABeo\\OOP_Exercises\\lab02\\Bai2.1_PhanSO\\Bai2.1_PhanSo.csproj": {
+    "D:\\Project_ABeo\\OOP_Exercises\\lab02\\Bai2.1_PhanSo\\Bai2.1_PhanSo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Project_ABeo\\OOP_Exercises\\lab02\\Bai2.1_PhanSO\\Bai2.1_PhanSo.csproj",
+        "projectUniqueName": "D:\\Project_ABeo\\OOP_Exercises\\lab02\\Bai2.1_PhanSo\\Bai2.1_PhanSo.csproj",
         "projectName": "Bai2.1_PhanSo",
-        "projectPath": "D:\\Project_ABeo\\OOP_Exercises\\lab02\\Bai2.1_PhanSO\\Bai2.1_PhanSo.csproj",
+        "projectPath": "D:\\Project_ABeo\\OOP_Exercises\\lab02\\Bai2.1_PhanSo\\Bai2.1_PhanSo.csproj",
         "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
-        "outputPath": "D:\\Project_ABeo\\OOP_Exercises\\lab02\\Bai2.1_PhanSO\\obj\\",
+        "outputPath": "D:\\Project_ABeo\\OOP_Exercises\\lab02\\Bai2.1_PhanSo\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
