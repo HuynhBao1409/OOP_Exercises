@@ -1,0 +1,15 @@
+D:\Project_ABeo\OOP_Exercises\lab02\Bai2.2_DSPhanSo\bin\Debug\net10.0\Bai2.2_DSPhanSo.exe
+D:\Project_ABeo\OOP_Exercises\lab02\Bai2.2_DSPhanSo\bin\Debug\net10.0\Bai2.2_DSPhanSo.deps.json
+D:\Project_ABeo\OOP_Exercises\lab02\Bai2.2_DSPhanSo\bin\Debug\net10.0\Bai2.2_DSPhanSo.runtimeconfig.json
+D:\Project_ABeo\OOP_Exercises\lab02\Bai2.2_DSPhanSo\bin\Debug\net10.0\Bai2.2_DSPhanSo.dll
+D:\Project_ABeo\OOP_Exercises\lab02\Bai2.2_DSPhanSo\bin\Debug\net10.0\Bai2.2_DSPhanSo.pdb
+D:\Project_ABeo\OOP_Exercises\lab02\Bai2.2_DSPhanSo\obj\Debug\net10.0\Bai2.2_DSPhanSo.GeneratedMSBuildEditorConfig.editorconfig
+D:\Project_ABeo\OOP_Exercises\lab02\Bai2.2_DSPhanSo\obj\Debug\net10.0\Bai2.2_DSPhanSo.AssemblyInfoInputs.cache
+D:\Project_ABeo\OOP_Exercises\lab02\Bai2.2_DSPhanSo\obj\Debug\net10.0\Bai2.2_DSPhanSo.AssemblyInfo.cs
+D:\Project_ABeo\OOP_Exercises\lab02\Bai2.2_DSPhanSo\obj\Debug\net10.0\Bai2.2_DSPhanSo.csproj.CoreCompileInputs.cache
+D:\Project_ABeo\OOP_Exercises\lab02\Bai2.2_DSPhanSo\obj\Debug\net10.0\Bai2.2_DSPhanSo.sourcelink.json
+D:\Project_ABeo\OOP_Exercises\lab02\Bai2.2_DSPhanSo\obj\Debug\net10.0\Bai2.2_DSPhanSo.dll
+D:\Project_ABeo\OOP_Exercises\lab02\Bai2.2_DSPhanSo\obj\Debug\net10.0\refint\Bai2.2_DSPhanSo.dll
+D:\Project_ABeo\OOP_Exercises\lab02\Bai2.2_DSPhanSo\obj\Debug\net10.0\Bai2.2_DSPhanSo.pdb
+D:\Project_ABeo\OOP_Exercises\lab02\Bai2.2_DSPhanSo\obj\Debug\net10.0\Bai2.2_DSPhanSo.genruntimeconfig.cache
+D:\Project_ABeo\OOP_Exercises\lab02\Bai2.2_DSPhanSo\obj\Debug\net10.0\ref\Bai2.2_DSPhanSo.dll
