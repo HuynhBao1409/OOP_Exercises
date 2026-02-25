@@ -1,0 +1,15 @@
+D:\Project_ABeo\OOP_Exercises\lab02\Bai2.4_Circle\obj\Debug\net10.0\Bai2.4_Circle.GeneratedMSBuildEditorConfig.editorconfig
+D:\Project_ABeo\OOP_Exercises\lab02\Bai2.4_Circle\obj\Debug\net10.0\Bai2.4_Circle.AssemblyInfoInputs.cache
+D:\Project_ABeo\OOP_Exercises\lab02\Bai2.4_Circle\obj\Debug\net10.0\Bai2.4_Circle.AssemblyInfo.cs
+D:\Project_ABeo\OOP_Exercises\lab02\Bai2.4_Circle\obj\Debug\net10.0\Bai2.4_Circle.csproj.CoreCompileInputs.cache
+D:\Project_ABeo\OOP_Exercises\lab02\Bai2.4_Circle\obj\Debug\net10.0\Bai2.4_Circle.sourcelink.json
+D:\Project_ABeo\OOP_Exercises\lab02\Bai2.4_Circle\bin\Debug\net10.0\Bai2.4_Circle.exe
+D:\Project_ABeo\OOP_Exercises\lab02\Bai2.4_Circle\bin\Debug\net10.0\Bai2.4_Circle.deps.json
+D:\Project_ABeo\OOP_Exercises\lab02\Bai2.4_Circle\bin\Debug\net10.0\Bai2.4_Circle.runtimeconfig.json
+D:\Project_ABeo\OOP_Exercises\lab02\Bai2.4_Circle\bin\Debug\net10.0\Bai2.4_Circle.dll
+D:\Project_ABeo\OOP_Exercises\lab02\Bai2.4_Circle\bin\Debug\net10.0\Bai2.4_Circle.pdb
+D:\Project_ABeo\OOP_Exercises\lab02\Bai2.4_Circle\obj\Debug\net10.0\Bai2.4_Circle.dll
+D:\Project_ABeo\OOP_Exercises\lab02\Bai2.4_Circle\obj\Debug\net10.0\refint\Bai2.4_Circle.dll
+D:\Project_ABeo\OOP_Exercises\lab02\Bai2.4_Circle\obj\Debug\net10.0\Bai2.4_Circle.pdb
+D:\Project_ABeo\OOP_Exercises\lab02\Bai2.4_Circle\obj\Debug\net10.0\Bai2.4_Circle.genruntimeconfig.cache
+D:\Project_ABeo\OOP_Exercises\lab02\Bai2.4_Circle\obj\Debug\net10.0\ref\Bai2.4_Circle.dll
