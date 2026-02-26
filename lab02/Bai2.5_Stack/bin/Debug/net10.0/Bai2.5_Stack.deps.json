@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "Bai2.5_Stack/1.0.0": {
+        "runtime": {
+          "Bai2.5_Stack.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Bai2.5_Stack/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

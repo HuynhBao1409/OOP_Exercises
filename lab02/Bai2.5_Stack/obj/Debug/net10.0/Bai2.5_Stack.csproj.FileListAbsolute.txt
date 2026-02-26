@@ -1,0 +1,15 @@
+D:\Project_ABeo\OOP_Exercises\lab02\Bai2.5_Stack\obj\Debug\net10.0\Bai2.5_Stack.GeneratedMSBuildEditorConfig.editorconfig
+D:\Project_ABeo\OOP_Exercises\lab02\Bai2.5_Stack\obj\Debug\net10.0\Bai2.5_Stack.AssemblyInfoInputs.cache
+D:\Project_ABeo\OOP_Exercises\lab02\Bai2.5_Stack\obj\Debug\net10.0\Bai2.5_Stack.AssemblyInfo.cs
+D:\Project_ABeo\OOP_Exercises\lab02\Bai2.5_Stack\obj\Debug\net10.0\Bai2.5_Stack.csproj.CoreCompileInputs.cache
+D:\Project_ABeo\OOP_Exercises\lab02\Bai2.5_Stack\obj\Debug\net10.0\Bai2.5_Stack.sourcelink.json
+D:\Project_ABeo\OOP_Exercises\lab02\Bai2.5_Stack\bin\Debug\net10.0\Bai2.5_Stack.exe
+D:\Project_ABeo\OOP_Exercises\lab02\Bai2.5_Stack\bin\Debug\net10.0\Bai2.5_Stack.deps.json
+D:\Project_ABeo\OOP_Exercises\lab02\Bai2.5_Stack\bin\Debug\net10.0\Bai2.5_Stack.runtimeconfig.json
+D:\Project_ABeo\OOP_Exercises\lab02\Bai2.5_Stack\bin\Debug\net10.0\Bai2.5_Stack.dll
+D:\Project_ABeo\OOP_Exercises\lab02\Bai2.5_Stack\bin\Debug\net10.0\Bai2.5_Stack.pdb
+D:\Project_ABeo\OOP_Exercises\lab02\Bai2.5_Stack\obj\Debug\net10.0\Bai2.5_Stack.dll
+D:\Project_ABeo\OOP_Exercises\lab02\Bai2.5_Stack\obj\Debug\net10.0\refint\Bai2.5_Stack.dll
+D:\Project_ABeo\OOP_Exercises\lab02\Bai2.5_Stack\obj\Debug\net10.0\Bai2.5_Stack.pdb
+D:\Project_ABeo\OOP_Exercises\lab02\Bai2.5_Stack\obj\Debug\net10.0\Bai2.5_Stack.genruntimeconfig.cache
+D:\Project_ABeo\OOP_Exercises\lab02\Bai2.5_Stack\obj\Debug\net10.0\ref\Bai2.5_Stack.dll
