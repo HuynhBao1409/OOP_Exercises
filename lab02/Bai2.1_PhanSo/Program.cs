@@ -1,3 +1,24 @@
+// 1. Xây dựng lớp PhanSo gồm có các thuộc tính, phương thức sau:
+// Thuộc tính:
+// TuSo: truy xuất đến dữ liệu riêng (private field) có tên là _tuSo
+
+// MauSo: truy xuất đến biến riêng (private field) có tên là _mauSo
+
+// Phương thức
+// Tên phương thức	Kiểu trả về	Chức năng
+// PhanSo(int ts, int ms)		Hàm khởi tạo phân số
+// PhanSo(PhanSo p)		Hàm thiết lập sao chép
+// Nhap()	void	Nhập phân số từ bàn phím
+// Xuat()	void	In phân số lên màn hình
+// ToiGian()	void	Tối giản phân số
+// Cong(PhanSo)	PhanSo	Cộng phân số với một phân số khác
+// Tru(PhanSo)	PhanSo	Trừ phân số với một phân số khác
+// 2. Chương trình chính
+// Khai báo 2 đối tượng phân số.
+// Nhập, xuất các phân số.
+// Tối giản các phân số.
+// Tính tổng, hiệu các phân số và in phân số kết quả lên màn hình.
+
 using System;
 
 class PhanSo

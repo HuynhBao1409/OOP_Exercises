@@ -49,19 +49,6 @@ class PhanSo
         }
     }
 
-    //Ham tim UCLN
-    private int TimUCLN(int a, int b)
-    {
-        a = Math.Abs(a);
-        b = Math.Abs(b);
-        while (b != 0)
-        {
-            int temp = b;
-            b = a % b;
-            a = temp;
-        }
-        return a;
-    }
 
     //Ham khoi tao khong can tham so
     public PhanSo()
@@ -123,6 +110,19 @@ class PhanSo
         {
             Console.Write($"{_tuSo}/{_mauSo}");
         }
+    }
+    //Ham tim UCLN
+    private int TimUCLN(int a, int b)
+    {
+        a = Math.Abs(a);
+        b = Math.Abs(b);
+        while (b != 0)
+        {
+            int temp = b;
+            b = a % b;
+            a = temp;
+        }
+        return a;
     }
 
     //Ham toi gian
