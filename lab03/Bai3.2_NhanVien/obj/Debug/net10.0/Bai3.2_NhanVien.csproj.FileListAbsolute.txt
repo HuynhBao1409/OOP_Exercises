@@ -1,0 +1,15 @@
+D:\Project_ABeo\OOP_Exercises\lab03\Bai3.2_NhanVien\obj\Debug\net10.0\Bai3.2_NhanVien.GeneratedMSBuildEditorConfig.editorconfig
+D:\Project_ABeo\OOP_Exercises\lab03\Bai3.2_NhanVien\obj\Debug\net10.0\Bai3.2_NhanVien.AssemblyInfoInputs.cache
+D:\Project_ABeo\OOP_Exercises\lab03\Bai3.2_NhanVien\obj\Debug\net10.0\Bai3.2_NhanVien.AssemblyInfo.cs
+D:\Project_ABeo\OOP_Exercises\lab03\Bai3.2_NhanVien\obj\Debug\net10.0\Bai3.2_NhanVien.csproj.CoreCompileInputs.cache
+D:\Project_ABeo\OOP_Exercises\lab03\Bai3.2_NhanVien\obj\Debug\net10.0\Bai3.2_NhanVien.sourcelink.json
+D:\Project_ABeo\OOP_Exercises\lab03\Bai3.2_NhanVien\bin\Debug\net10.0\Bai3.2_NhanVien.exe
+D:\Project_ABeo\OOP_Exercises\lab03\Bai3.2_NhanVien\bin\Debug\net10.0\Bai3.2_NhanVien.deps.json
+D:\Project_ABeo\OOP_Exercises\lab03\Bai3.2_NhanVien\bin\Debug\net10.0\Bai3.2_NhanVien.runtimeconfig.json
+D:\Project_ABeo\OOP_Exercises\lab03\Bai3.2_NhanVien\bin\Debug\net10.0\Bai3.2_NhanVien.dll
+D:\Project_ABeo\OOP_Exercises\lab03\Bai3.2_NhanVien\bin\Debug\net10.0\Bai3.2_NhanVien.pdb
+D:\Project_ABeo\OOP_Exercises\lab03\Bai3.2_NhanVien\obj\Debug\net10.0\Bai3.2_NhanVien.dll
+D:\Project_ABeo\OOP_Exercises\lab03\Bai3.2_NhanVien\obj\Debug\net10.0\refint\Bai3.2_NhanVien.dll
+D:\Project_ABeo\OOP_Exercises\lab03\Bai3.2_NhanVien\obj\Debug\net10.0\Bai3.2_NhanVien.pdb
+D:\Project_ABeo\OOP_Exercises\lab03\Bai3.2_NhanVien\obj\Debug\net10.0\Bai3.2_NhanVien.genruntimeconfig.cache
+D:\Project_ABeo\OOP_Exercises\lab03\Bai3.2_NhanVien\obj\Debug\net10.0\ref\Bai3.2_NhanVien.dll
