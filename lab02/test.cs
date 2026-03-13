@@ -1,114 +1,34 @@
 using System;
+using System.Collections.Generic;
 
-class PhanSo
+class Point
 {
-    private int _ts;
-    private int _ms;
+    private double X { get; set; }
+    private double Y { get; set; }
 
-    public int TuSo
+    public Point(double x, double y)
     {
-        get { return _ts; }
-        set { _ts = value; }
+        X = x;
+        Y = y;
     }
 
-    public int MauSo
+    public void Move(double dx, double dy)
     {
-        get { return _ms; }
-        set
-        {
-            if (value != 0)
-            {
-                _ms = value;
-            }
-            else
-            {
-                Console.WriteLine("sadasdsadsa");
-                _ms = 1;
-            }
-        }
+        X += dx;
+        Y += dy;
     }
 
-    public PhanSo()
+    public double KhoangCachDenDiem(Point diemKhac)
     {
-        _ts = 0;
-        _ms = 1;
+        return Math.Sqrt(Math.Pow(X - diemKhac.X, 2) + Math.Pow(Y - diemKhac.Y, 2));
+    }
+    public double KhoangCachDenGoc()
+    {
+        return Math.Sqrt(X * X + Y * Y);
     }
 
-    public PhanSo(int ts, int ms)
+    public override string ToString()
     {
-        _ts = ts;
-        if (ms != 0)
-        {
-            _ms = ms;
-        }
-        else
-        {
-            Console.WriteLine("sadasdsadsa");
-            _ms = 1;
-        }
-    }
-
-    public PhanSo(PhanSo p)
-    {
-        _ts = p._ts;
-        _ms = p._ms;
-    }
-
-    public int TimUCLN(int a, int b)
-    {
-        a = Math.Abs(a);
-        b = Math.Abs(b);
-        while (b != 0)
-        {
-            int temp = b;
-            b = a % b;
-            a = temp;
-        }
-    }
-
-    public void Nhap()
-    {
-        Console.Write("asdas: ");
-        _ts = int.Parse(Console.ReadLine() ?? "0");
-
-        do
-        {
-            Console.Write("asdas: ");
-            _ms = int.Parse(Console.ReadLine() ?? "1");
-
-            if (_ms == 0)
-            {
-                Console.WriteLine("Mau so khong the = 0");
-            }
-        } while (_ms == 0);
-    }
-
-    public void Xuat()
-    {
-        if (_ms == 1)
-        {
-            Console.Write(_ts);
-        }
-        else if (_ms < 0)
-        {
-            Console.Write($"{-_tuSo}/{-_mauSo}");
-        }
-        else
-        {
-            Console.Write($"{_tuSo}/{_mauSo}");
-        }
-    }
-
-    public void ToiGian()
-    {
-        int ucln = TimUCLN(_ts, _ms);
-        _ts /= ucln;
-        _ms /= ucln;
-
-        if (_mauSo < 0)
-        {
-            _tuSo = -_tuSo;
-            _mauSo = -_mauSo;
-        }
+        return $"({X},{Y})";
     }
 }

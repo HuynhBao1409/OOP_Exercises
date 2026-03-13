@@ -172,6 +172,11 @@ class Program
         }
 
         //d.Sắp xếp theo năm sản xuât tăng dần
+        //hoặc dùng static void SapXep(){
+        //a.OrdeBy(p=>p); == sắp xếp tăng dần
+        //a.OroderByDescending(p=>p)  === sắp xếp giảm dần
+        //}
+
         for (int i = 0; i < danhSach.Count - 1; i++)
         {
             for (int j = 0; j < danhSach.Count - i - 1; j++)

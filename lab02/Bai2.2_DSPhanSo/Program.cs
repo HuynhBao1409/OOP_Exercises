@@ -259,18 +259,20 @@ class DSPhanSo
         }
 
         //Sap xep noi bot(bubble Sort)
-        for (int i = 0; i < _size - 1; i++)
-        {
-            for (int j = 0; j < _size - i - 1; j++)
-            {
-                if (_dsPS[j].SoSanh(_dsPS[j + 1]) > 0)
-                {
-                    PhanSo temp = _dsPS[j];
-                    _dsPS[j] = _dsPS[j + 1];
-                    _dsPS[j + 1] = temp;
-                }
-            }
-        }
+        // for (int i = 0; i < _size - 1; i++)
+        // {
+        //     for (int j = 0; j < _size - i - 1; j++)
+        //     {
+        //         if (_dsPS[j].SoSanh(_dsPS[j + 1]) > 0)
+        //         {
+        //             PhanSo temp = _dsPS[j];
+        //             _dsPS[j] = _dsPS[j + 1];
+        //             _dsPS[j + 1] = temp;
+        //         }
+        //     }
+        // }
+        //có thể thay: 
+        Array.Sort(_dsPS, (a, b) => a.LayGiaTri().CompareTo(b.LayGiaTri()));
     }
 }
 

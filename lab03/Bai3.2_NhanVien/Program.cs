@@ -179,18 +179,19 @@ class Program
         }
 
         //Sap xep giam dan theo luong
-        for (int i = 0; i < danhsach.Count - 1; i++)
-        {
-            for (int j = 0; j < danhsach.Count - i - 1; j++)
-            {
-                if (danhsach[j].GetLuong() < danhsach[j + 1].GetLuong())
-                {
-                    NhanVien temp = danhsach[j];
-                    danhsach[j] = danhsach[j + 1];
-                    danhsach[j + 1] = temp;
-                }
-            }
-        }
+        danhsach.Sort((a, b) => b.GetLuong().CompareTo(a.GetLuong()));
+        // for (int i = 0; i < danhsach.Count - 1; i++)
+        // {
+        //     for (int j = 0; j < danhsach.Count - i - 1; j++)
+        //     {
+        //         if (danhsach[j].GetLuong() < danhsach[j + 1].GetLuong())
+        //         {
+        //             NhanVien temp = danhsach[j];
+        //             danhsach[j] = danhsach[j + 1];
+        //             danhsach[j + 1] = temp;
+        //         }
+        //     }
+        // }
 
 
         //In danh sach sau khi sap xep

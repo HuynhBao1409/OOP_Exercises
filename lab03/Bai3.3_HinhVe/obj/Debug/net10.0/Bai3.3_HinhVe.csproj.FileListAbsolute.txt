@@ -1,0 +1,15 @@
+D:\Project_ABeo\OOP_Exercises\lab03\Bai3.3_HinhVe\obj\Debug\net10.0\Bai3.3_HinhVe.GeneratedMSBuildEditorConfig.editorconfig
+D:\Project_ABeo\OOP_Exercises\lab03\Bai3.3_HinhVe\obj\Debug\net10.0\Bai3.3_HinhVe.AssemblyInfoInputs.cache
+D:\Project_ABeo\OOP_Exercises\lab03\Bai3.3_HinhVe\obj\Debug\net10.0\Bai3.3_HinhVe.AssemblyInfo.cs
+D:\Project_ABeo\OOP_Exercises\lab03\Bai3.3_HinhVe\obj\Debug\net10.0\Bai3.3_HinhVe.csproj.CoreCompileInputs.cache
+D:\Project_ABeo\OOP_Exercises\lab03\Bai3.3_HinhVe\obj\Debug\net10.0\Bai3.3_HinhVe.sourcelink.json
+D:\Project_ABeo\OOP_Exercises\lab03\Bai3.3_HinhVe\bin\Debug\net10.0\Bai3.3_HinhVe.exe
+D:\Project_ABeo\OOP_Exercises\lab03\Bai3.3_HinhVe\bin\Debug\net10.0\Bai3.3_HinhVe.deps.json
+D:\Project_ABeo\OOP_Exercises\lab03\Bai3.3_HinhVe\bin\Debug\net10.0\Bai3.3_HinhVe.runtimeconfig.json
+D:\Project_ABeo\OOP_Exercises\lab03\Bai3.3_HinhVe\bin\Debug\net10.0\Bai3.3_HinhVe.dll
+D:\Project_ABeo\OOP_Exercises\lab03\Bai3.3_HinhVe\bin\Debug\net10.0\Bai3.3_HinhVe.pdb
+D:\Project_ABeo\OOP_Exercises\lab03\Bai3.3_HinhVe\obj\Debug\net10.0\Bai3.3_HinhVe.dll
+D:\Project_ABeo\OOP_Exercises\lab03\Bai3.3_HinhVe\obj\Debug\net10.0\refint\Bai3.3_HinhVe.dll
+D:\Project_ABeo\OOP_Exercises\lab03\Bai3.3_HinhVe\obj\Debug\net10.0\Bai3.3_HinhVe.pdb
+D:\Project_ABeo\OOP_Exercises\lab03\Bai3.3_HinhVe\obj\Debug\net10.0\Bai3.3_HinhVe.genruntimeconfig.cache
+D:\Project_ABeo\OOP_Exercises\lab03\Bai3.3_HinhVe\obj\Debug\net10.0\ref\Bai3.3_HinhVe.dll
