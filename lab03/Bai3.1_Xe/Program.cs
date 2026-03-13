@@ -172,24 +172,23 @@ class Program
         }
 
         //d.Sắp xếp theo năm sản xuât tăng dần
-        //hoặc dùng static void SapXep(){
-        //a.OrdeBy(p=>p); == sắp xếp tăng dần
-        //a.OroderByDescending(p=>p)  === sắp xếp giảm dần
-        //}
+        //hoặc dùng Sort
+        danhSach.Sort((a, b) => a.GetNamSanXuat().CompareTo(b.GetNamSanXuat()));
+        //sắp xếp giảm dần thì đổi a vs b cho nhau
 
-        for (int i = 0; i < danhSach.Count - 1; i++)
-        {
-            for (int j = 0; j < danhSach.Count - i - 1; j++)
-            {
-                if (danhSach[j].GetNamSanXuat() > danhSach[j + 1].GetNamSanXuat())
-                {
-                    // Hoán đổi vị trí hai xe
-                    XeCon temp = danhSach[j];
-                    danhSach[j] = danhSach[j + 1];
-                    danhSach[j + 1] = temp;
-                }
-            }
-        }
+        // for (int i = 0; i < danhSach.Count - 1; i++)
+        // {
+        //     for (int j = 0; j < danhSach.Count - i - 1; j++)
+        //     {
+        //         if (danhSach[j].GetNamSanXuat() > danhSach[j + 1].GetNamSanXuat())
+        //         {
+        //             // Hoán đổi vị trí hai xe
+        //             XeCon temp = danhSach[j];
+        //             danhSach[j] = danhSach[j + 1];
+        //             danhSach[j + 1] = temp;
+        //         }
+        //     }
+        // }
         Console.WriteLine("\n========== DANH SÁCH SAU KHI SẮP XẾP (NĂM SX TĂNG DẦN) ==========");
         for (int i = 0; i < danhSach.Count; i++)
         {

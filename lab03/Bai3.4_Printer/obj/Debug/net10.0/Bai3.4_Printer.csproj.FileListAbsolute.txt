@@ -1,0 +1,15 @@
+D:\Project_ABeo\OOP_Exercises\lab03\Bai3.4_Printer\obj\Debug\net10.0\Bai3.4_Printer.GeneratedMSBuildEditorConfig.editorconfig
+D:\Project_ABeo\OOP_Exercises\lab03\Bai3.4_Printer\obj\Debug\net10.0\Bai3.4_Printer.AssemblyInfoInputs.cache
+D:\Project_ABeo\OOP_Exercises\lab03\Bai3.4_Printer\obj\Debug\net10.0\Bai3.4_Printer.AssemblyInfo.cs
+D:\Project_ABeo\OOP_Exercises\lab03\Bai3.4_Printer\obj\Debug\net10.0\Bai3.4_Printer.csproj.CoreCompileInputs.cache
+D:\Project_ABeo\OOP_Exercises\lab03\Bai3.4_Printer\obj\Debug\net10.0\Bai3.4_Printer.sourcelink.json
+D:\Project_ABeo\OOP_Exercises\lab03\Bai3.4_Printer\bin\Debug\net10.0\Bai3.4_Printer.exe
+D:\Project_ABeo\OOP_Exercises\lab03\Bai3.4_Printer\bin\Debug\net10.0\Bai3.4_Printer.deps.json
+D:\Project_ABeo\OOP_Exercises\lab03\Bai3.4_Printer\bin\Debug\net10.0\Bai3.4_Printer.runtimeconfig.json
+D:\Project_ABeo\OOP_Exercises\lab03\Bai3.4_Printer\bin\Debug\net10.0\Bai3.4_Printer.dll
+D:\Project_ABeo\OOP_Exercises\lab03\Bai3.4_Printer\bin\Debug\net10.0\Bai3.4_Printer.pdb
+D:\Project_ABeo\OOP_Exercises\lab03\Bai3.4_Printer\obj\Debug\net10.0\Bai3.4_Printer.dll
+D:\Project_ABeo\OOP_Exercises\lab03\Bai3.4_Printer\obj\Debug\net10.0\refint\Bai3.4_Printer.dll
+D:\Project_ABeo\OOP_Exercises\lab03\Bai3.4_Printer\obj\Debug\net10.0\Bai3.4_Printer.pdb
+D:\Project_ABeo\OOP_Exercises\lab03\Bai3.4_Printer\obj\Debug\net10.0\Bai3.4_Printer.genruntimeconfig.cache
+D:\Project_ABeo\OOP_Exercises\lab03\Bai3.4_Printer\obj\Debug\net10.0\ref\Bai3.4_Printer.dll
