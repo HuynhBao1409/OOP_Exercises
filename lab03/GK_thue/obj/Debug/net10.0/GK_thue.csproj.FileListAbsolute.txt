@@ -1,0 +1,15 @@
+D:\Project_ABeo\OOP_Exercises\lab03\GK_thue\obj\Debug\net10.0\GK_thue.GeneratedMSBuildEditorConfig.editorconfig
+D:\Project_ABeo\OOP_Exercises\lab03\GK_thue\obj\Debug\net10.0\GK_thue.AssemblyInfoInputs.cache
+D:\Project_ABeo\OOP_Exercises\lab03\GK_thue\obj\Debug\net10.0\GK_thue.AssemblyInfo.cs
+D:\Project_ABeo\OOP_Exercises\lab03\GK_thue\obj\Debug\net10.0\GK_thue.csproj.CoreCompileInputs.cache
+D:\Project_ABeo\OOP_Exercises\lab03\GK_thue\obj\Debug\net10.0\GK_thue.sourcelink.json
+D:\Project_ABeo\OOP_Exercises\lab03\GK_thue\bin\Debug\net10.0\GK_thue.exe
+D:\Project_ABeo\OOP_Exercises\lab03\GK_thue\bin\Debug\net10.0\GK_thue.deps.json
+D:\Project_ABeo\OOP_Exercises\lab03\GK_thue\bin\Debug\net10.0\GK_thue.runtimeconfig.json
+D:\Project_ABeo\OOP_Exercises\lab03\GK_thue\bin\Debug\net10.0\GK_thue.dll
+D:\Project_ABeo\OOP_Exercises\lab03\GK_thue\bin\Debug\net10.0\GK_thue.pdb
+D:\Project_ABeo\OOP_Exercises\lab03\GK_thue\obj\Debug\net10.0\GK_thue.dll
+D:\Project_ABeo\OOP_Exercises\lab03\GK_thue\obj\Debug\net10.0\refint\GK_thue.dll
+D:\Project_ABeo\OOP_Exercises\lab03\GK_thue\obj\Debug\net10.0\GK_thue.pdb
+D:\Project_ABeo\OOP_Exercises\lab03\GK_thue\obj\Debug\net10.0\GK_thue.genruntimeconfig.cache
+D:\Project_ABeo\OOP_Exercises\lab03\GK_thue\obj\Debug\net10.0\ref\GK_thue.dll

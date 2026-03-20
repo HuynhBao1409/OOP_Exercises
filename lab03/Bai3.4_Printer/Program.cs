@@ -31,8 +31,8 @@ class Printer
 
     public virtual void Xuat()
     {
-        Console.WriteLine("  Nhà sản xuất : " + nhaSanXuat);
-        Console.WriteLine("  Giá bán      : " + gia + " triệu");
+        Console.WriteLine($"  Nhà sản xuất : {nhaSanXuat}");
+        Console.WriteLine($"  Giá bán      : {gia} (triệu)");
     }
 }
 
@@ -60,7 +60,7 @@ class LaserPrinter : Printer
     public override void Xuat()
     {
         base.Xuat();
-        Console.WriteLine("  Độ phân giải : " + doPhanGiai);
+        Console.WriteLine($"  Độ phân giải : {doPhanGiai}");
     }
 }
 
