@@ -267,14 +267,14 @@ class Program
 
         //Xoa trung lap ma,giu cai dau
         List<HangXK> dsKhongTrung = new List<HangXK>();
-        List<string> daMaGap = new List<string>();
+        List<string> maDaGap = new List<string>();
 
         foreach (var h in ds)
         {
-            if (!daMaGap.Contains(h.MaHang))
+            if (!maDaGap.Contains(h.MaHang))
             {
                 dsKhongTrung.Add(h);
-                daMaGap.Add(h.MaHang);
+                maDaGap.Add(h.MaHang);
             }
         }
 

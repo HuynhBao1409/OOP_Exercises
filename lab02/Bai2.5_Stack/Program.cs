@@ -92,7 +92,7 @@ class Stack
         }
 
         Console.Write("Stack (từ đỉnh xuống đáy): ");
-        for (int i = top; i >= 0; i++)
+        for (int i = top; i >= 0; i--)
         {
             Console.Write(stack[i] + " ");
         }

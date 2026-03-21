@@ -59,8 +59,8 @@ class HinhVuong : HinhChuNhat
     public override void Xuat()
     {
         Console.WriteLine("Hình vuông:");
-        Console.WriteLine("  Cạnh     : " + chieuDai);
-        Console.WriteLine("  Diện tích: " + DienTich());
+        Console.WriteLine($"  Cạnh     : {chieuDai}");
+        Console.WriteLine($"  Diện tích: {DienTich()}");
     }
 }
 
