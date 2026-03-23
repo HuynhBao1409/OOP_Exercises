@@ -1,132 +1,79 @@
 using System;
 using System.Collections.Generic;
 
-class HinhVe
+class Xe
 {
-    public virtual double DienTich()
+    protected string bienSo;
+    protected int namSanXuat;
+    protected double gia;
+
+    public Xe()
     {
-        return 0;
+
+    }
+
+    public Xe(string bienSo, int namSanXuat, double gia)
+    {
+        this.bienSo = bienSo;
+        this.namSanXuat = namSanXuat;
+        this.gia = gia;
+    }
+
+    public string GetBienSo() { return bienSo; }
+    public int GetNamSanXuat() { return namSanXuat; }
+    public double GetGia() { return gia; }
+
+    public virtual void Nhap()
+    {
+        Console.Write(" Nhập biển số xe (vd: 79A-12345): ");
+        bienSo = Console.ReadLine();
+
+        Console.Write(" Nhập năm sản xuất: ");
+        namSanXuat = int.Parse(Console.ReadLine());
+
+        Console.Write(" Nhập giá tiền: ");
+        gia = double.Parse(Console.ReadLine());
     }
 
     public virtual void Xuat()
     {
-        Console.WriteLine($"Dt: {DienTich()}");
+        Console.WriteLine($"Biển số: {bienSo}");
+        Console.WriteLine($" Năm sản xuất: {namSanXuat}");
+        Console.WriteLine($" Giá tiền: {gia}");
     }
 }
 
-class HinhChuNhat : HinhVe
+class XeCon : Xe
 {
-    protected double chieuDai;
-    protected double chieuRong;
+    private int soCho;
+    private string loaiXe;
 
-    public HinhChuNhat()
+    public XeCon() : base()
     {
 
     }
-    public HinhChuNhat(double chieuDai, double chieuRong)
+
+    public XeCon(string bienSo, int namSanXuat, double gia, int soCho, string loaiXe)
+    : base(bienSo, namSanXuat, gia)
     {
-        this.chieuDai = chieuDai;
-        this.chieuRong = chieuRong;
+        this.soCho = soCho;
+        this.loaiXe = loaiXe;
     }
 
-    public override double DienTich()
+    public override void Nhap()
     {
-        return chieuDai * chieuRong;
+        base.Nhap();
+        Console.Write(" Nhập số chỗ: ");
+        soCho = int.Parse(Console.ReadLine());
+
+        Console.Write("  Nhập loại xe (sedan/SUV/bán tải): ");
+        loaiXe = Console.ReadLine();
     }
 
     public override void Xuat()
     {
-        Console.WriteLine("Hình chữ nhật: ");
-        Console.WriteLine("  Chiều dài : " + chieuDai);
-        Console.WriteLine("  Chiều rộng: " + chieuRong);
-        Console.WriteLine("  Diện tích : " + DienTich());
-    }
-}
-
-class HinhVuong : HinhChuNhat
-{
-    public HinhVuong(double canh) : base(canh, canh)
-    {
-
-    }
-
-    public override void Xuat()
-    {
-        Console.WriteLine("Hình vuông:");
-        Console.WriteLine($"  Cạnh     : {chieuDai}");
-        Console.WriteLine($"  Diện tích: {DienTich()}");
-    }
-}
-
-class HinhTron : HinhVe
-{
-    protected double R;
-    public HinhTron()
-    {
-
-    }
-    public HinhTron(double R)
-    {
-        this.R = R;
-    }
-
-    public override double DienTich()
-    {
-        return Math.PI * R * R;
-    }
-
-    public override void Xuat()
-    {
-        Console.WriteLine("Hình tròn");
-        Console.WriteLine($"BK: {R}");
-        Console.WriteLine($"Diện tích: {Math.Round(DienTich(), 4)}");
-    }
-}
-
-class test
-{
-    static void Main()
-    {
-        Console.OutputEncoding = System.Text.Encoding.UTF8;
-
-        Console.WriteLine("==== CHƯƠNG TRÌNH CHỌN DIỆN TÍCH ====");
-        Console.WriteLine("Chọn loại hình:");
-        Console.WriteLine("  1. Hình chữ nhật");
-        Console.WriteLine("  2. Hình vuông");
-        Console.WriteLine("  3. Hình tròn");
-        Console.Write("Nhập lựa chọn (1/2/3): ");
-        int loai = int.Parse(Console.ReadLine());
-
-        HinhVe hv;
-        if (loai == 1)
-        {
-            // Nhập hình chữ nhật
-            Console.Write("Nhập chiều dài: ");
-            double dai = double.Parse(Console.ReadLine());
-
-            Console.Write("Nhập chiều rộng: ");
-            double rong = double.Parse(Console.ReadLine());
-            hv = new HinhChuNhat(dai, rong);
-        }
-        else if (loai == 2)
-        {
-
-            // Nhập hình vuông
-            Console.Write("Nhập độ dài cạnh: ");
-            double canh = double.Parse(Console.ReadLine());
-
-            hv = new HinhVuong(canh);
-        }
-        else if (loai == 3)
-        {
-            // Nhập hình tròn
-            Console.Write("Nhập bán kính: ");
-            double bankinh = double.Parse(Console.ReadLine());
-
-            hv = new HinhTron(bankinh);
-        }
-
-        Console.WriteLine("\n==== Kết quả ====");
-        hv.Xuat();
+        base.Xuat();
+        Console.WriteLine($"Số chỗ ngồi : {soCho}");
+        Console.WriteLine($" Loại xe     : {loaiXe}");
     }
 }

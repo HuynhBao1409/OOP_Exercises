@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Project_ABeo\\OOP_Exercises\\OnTap\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B6063B38-B0B7-4E41-8B02-F3623E94FF80}|OnTap\\OnTap.csproj|d:\\project_abeo\\oop_exercises\\ontap\\ontap\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6063B38-B0B7-4E41-8B02-F3623E94FF80}|OnTap\\OnTap.csproj|solutionrelative:ontap\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Project_ABeo\\OOP_Exercises\\OnTap\\OnTap\\Program.cs",
+              "RelativeDocumentMoniker": "OnTap\\Program.cs",
+              "ToolTip": "D:\\Project_ABeo\\OOP_Exercises\\OnTap\\OnTap\\Program.cs",
+              "RelativeToolTip": "OnTap\\Program.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAIwH0AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-21T01:36:45.049Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

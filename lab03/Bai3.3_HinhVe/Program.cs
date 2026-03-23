@@ -83,8 +83,8 @@ class HinhTron : HinhVe
     public override void Xuat()
     {
         Console.WriteLine("Hình tròn");
-        Console.WriteLine("Bán kính: " + R);
-        Console.WriteLine("Diện tích: " + Math.Round(DienTich(), 4));
+        Console.WriteLine($"Bán kính: {R}");
+        Console.WriteLine($"Diện tích:  {Math.Round(DienTich(), 4)}");
     }
 }
 
