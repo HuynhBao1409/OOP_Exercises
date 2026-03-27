@@ -1,0 +1,17 @@
+D:\Project_ABeo\OOP_Exercises\lab05\Bai5.1_HinhTron\Bai5.1_HinhTron\bin\Debug\net9.0-windows\Bai5.1_HinhTron.exe
+D:\Project_ABeo\OOP_Exercises\lab05\Bai5.1_HinhTron\Bai5.1_HinhTron\bin\Debug\net9.0-windows\Bai5.1_HinhTron.deps.json
+D:\Project_ABeo\OOP_Exercises\lab05\Bai5.1_HinhTron\Bai5.1_HinhTron\bin\Debug\net9.0-windows\Bai5.1_HinhTron.runtimeconfig.json
+D:\Project_ABeo\OOP_Exercises\lab05\Bai5.1_HinhTron\Bai5.1_HinhTron\bin\Debug\net9.0-windows\Bai5.1_HinhTron.dll
+D:\Project_ABeo\OOP_Exercises\lab05\Bai5.1_HinhTron\Bai5.1_HinhTron\bin\Debug\net9.0-windows\Bai5.1_HinhTron.pdb
+D:\Project_ABeo\OOP_Exercises\lab05\Bai5.1_HinhTron\Bai5.1_HinhTron\obj\Debug\net9.0-windows\Bai5._1_HinhTron.Form1.resources
+D:\Project_ABeo\OOP_Exercises\lab05\Bai5.1_HinhTron\Bai5.1_HinhTron\obj\Debug\net9.0-windows\Bai5.1_HinhTron.csproj.GenerateResource.cache
+D:\Project_ABeo\OOP_Exercises\lab05\Bai5.1_HinhTron\Bai5.1_HinhTron\obj\Debug\net9.0-windows\Bai5.1_HinhTron.GeneratedMSBuildEditorConfig.editorconfig
+D:\Project_ABeo\OOP_Exercises\lab05\Bai5.1_HinhTron\Bai5.1_HinhTron\obj\Debug\net9.0-windows\Bai5.1_HinhTron.AssemblyInfoInputs.cache
+D:\Project_ABeo\OOP_Exercises\lab05\Bai5.1_HinhTron\Bai5.1_HinhTron\obj\Debug\net9.0-windows\Bai5.1_HinhTron.AssemblyInfo.cs
+D:\Project_ABeo\OOP_Exercises\lab05\Bai5.1_HinhTron\Bai5.1_HinhTron\obj\Debug\net9.0-windows\Bai5.1_HinhTron.csproj.CoreCompileInputs.cache
+D:\Project_ABeo\OOP_Exercises\lab05\Bai5.1_HinhTron\Bai5.1_HinhTron\obj\Debug\net9.0-windows\Bai5.1_HinhTron.sourcelink.json
+D:\Project_ABeo\OOP_Exercises\lab05\Bai5.1_HinhTron\Bai5.1_HinhTron\obj\Debug\net9.0-windows\Bai5.1_HinhTron.dll
+D:\Project_ABeo\OOP_Exercises\lab05\Bai5.1_HinhTron\Bai5.1_HinhTron\obj\Debug\net9.0-windows\refint\Bai5.1_HinhTron.dll
+D:\Project_ABeo\OOP_Exercises\lab05\Bai5.1_HinhTron\Bai5.1_HinhTron\obj\Debug\net9.0-windows\Bai5.1_HinhTron.pdb
+D:\Project_ABeo\OOP_Exercises\lab05\Bai5.1_HinhTron\Bai5.1_HinhTron\obj\Debug\net9.0-windows\Bai5.1_HinhTron.genruntimeconfig.cache
+D:\Project_ABeo\OOP_Exercises\lab05\Bai5.1_HinhTron\Bai5.1_HinhTron\obj\Debug\net9.0-windows\ref\Bai5.1_HinhTron.dll
