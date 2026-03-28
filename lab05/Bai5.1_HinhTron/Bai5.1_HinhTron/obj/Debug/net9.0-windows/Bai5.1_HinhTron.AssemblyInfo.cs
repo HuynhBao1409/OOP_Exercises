@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Bai5.1_HinhTron")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bef87fa8fc932b260b045736a673bb994b25e9f4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3725755484127f28ade2960996865e63597b1114")]
 [assembly: System.Reflection.AssemblyProductAttribute("Bai5.1_HinhTron")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Bai5.1_HinhTron")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

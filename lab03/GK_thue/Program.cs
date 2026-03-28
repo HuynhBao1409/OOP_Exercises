@@ -248,7 +248,7 @@ class Program
         Console.WriteLine("\n========== DANH SÁCH SẢN PHẨM XUẤT KHẨU ==========");
         for (int i = 0; i < ds.Count; i++)
         {
-            Console.WriteLine($"\nSản phẩm {i + 1}:");
+            Console.Write($"\nSản phẩm {i + 1}:");
             ds[i].Xuat();
             Console.WriteLine();
         }
