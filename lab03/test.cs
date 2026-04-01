@@ -1,13 +1,14 @@
 using System;
 using System.Collections.Generic;
+using System.Runtime.Intrinsics.Arm;
 
 class HangHoa
 {
-    protected double maHang;
-    protected string tenHang;
-    protected double donGia;
+    private string maHang;
+    private string tenHang;
+    private double donGia;
 
-    public double MaHang
+    public string MaHang
     {
         get { return maHang; }
         set
@@ -18,7 +19,7 @@ class HangHoa
             }
             else
             {
-                Console.WriteLine("loi");
+                Console.WriteLine("asddasas");
             }
         }
     }
@@ -34,11 +35,10 @@ class HangHoa
             }
             else
             {
-                Console.WriteLine("loi");
+                Console.WriteLine("asdasd");
             }
         }
     }
-
     public double DonGia
     {
         get { return donGia; }
@@ -50,7 +50,7 @@ class HangHoa
             }
             else
             {
-                Console.WriteLine("sad");
+                Console.WriteLine("  Lỗi: Đơn giá phải lớn hơn 0!");
             }
         }
     }
@@ -60,38 +60,40 @@ class HangHoa
 
     }
 
-    public HangHoa(double maHang, string tenHang, double donGia)
+    publMic HangHoa(string maHang, string tenHang, double donGia)
     {
-        this.maHang = maHang;
-        this.tenHang = tenHang;
-        this.donGia = donGia;
+        MaHang = maHang;
+        TenHang = tenHang;
+        DonGia = donGia;
     }
 
     public virtual void Nhap()
     {
         do
         {
-            Console.Write("asdasad");
-            maHang = double.Parse(Console.ReadLine());
+            Console.Write("sadsada");
+            MaHang = Console.ReadLine();
         } while (maHang == null);
-
         do
         {
-            Console.Write("sdasdada");
-            tenHang = Console.ReadLine();
+            Console.Write("sadsada");
+            TenHang = Console.ReadLine();
         } while (tenHang == null);
-
         do
         {
-            Console.Write("sadasd");
-            donGia = double.Parse(Console.ReadLine());
+            Console.Write("sadsada");
+            if (double.TryParse(Console.ReadLine(), out double nhap))
+            {
+                DonGia = nhap;
+            }
         } while (donGia == 0);
     }
+
     public virtual void Xuat()
     {
-        Console.WriteLine($"asdsa {maHang}");
-        Console.WriteLine($"asdsa {tenHang}");
-        Console.WriteLine($"asdsa {donGia:N0} vnd");
+        Console.WriteLine($"MH: {MaHang}");
+        Console.WriteLine($"TH: {TenHang}");
+        Console.WriteLine($"DG: {DonGia}");
     }
 }
 
@@ -111,7 +113,7 @@ class HangXK : HangHoa
             }
             else
             {
-                Console.WriteLine("loi");
+                Console.WriteLine("asdasdasdsaasdf");
             }
         }
     }
@@ -127,32 +129,30 @@ class HangXK : HangHoa
             }
             else
             {
-                Console.WriteLine("asdasdad");
+                Console.WriteLine("asssdasd");
             }
         }
     }
 
-    public HangXK() : base()
-    {
+    public HangXK() : base() { }
 
-    }
-
-    public HangXK(double maHang, string tenHang, double donGia, double thueSuat, int soLuong)
-    : base(maHang, tenHang, donGia)
+    public HangXK(string maHang, string tenHang, double donGia, double thueSuat, int soLuong) :
+    base(maHang, tenHang, donGia)
     {
-        this.thueSuat = thueSuat;
-        this.soLuong = soLuong;
+        ThueSuat = thueSuat;
+        SoLuong = soLuong;
     }
 
     public double TinhThue()
     {
-        return soLuong * donGia * (thueSuat / 100);
+        return SoLuong * DonGia * (ThueSuat / 100);
     }
 
     public override void Nhap()
     {
         base.Nhap();
         bool hople = false;
+
         do
         {
             Console.Write("  Thuế suất XK (0-100): ");
@@ -163,24 +163,23 @@ class HangXK : HangHoa
             }
             else
             {
-                Console.WriteLine("  Lỗi: Thuế suất phải trong khoảng [0, 100]!");
+                Console.WriteLine("asdasda");
             }
         } while (!hople);
-
 
         bool hople = false;
 
         do
         {
-            Console.WriteLine("soluong:");
-            if (int.TryParse(Console.ReadLine(), out int nhap) && nhap >= 0)
+            Console.Write("  So luong: ");
+            if (double.TryParse(Console.ReadLine(), out int nhap) && nhap >= 0)
             {
-                soLuong = nhap;
+                SoLuong = nhap;
                 hople = true;
             }
             else
             {
-                Console.WriteLine("  Lỗi: Số lượng phải là số nguyên >= 0!");
+                Console.WriteLine("asdasda");
             }
         } while (!hople);
     }
@@ -188,9 +187,9 @@ class HangXK : HangHoa
     public override void Xuat()
     {
         base.Xuat();
-        Console.WriteLine($"{thueSuat}");
-        Console.WriteLine($"{soLuong}");
-        Console.WriteLine($"Tien thue {TinhThue():N0}");
+        Console.WriteLine($"So luong: {SoLuong}");
+        Console.WriteLine($"Thue: {ThueSuat}");
+        Console.WriteLine($"Tien thue: {TinhThue():NO}");
     }
 }
 
@@ -201,59 +200,71 @@ class test
         int n = 0;
         do
         {
-            Console.Write("sadsadas");
-            int.Parse(Console.ReadLine());
-
+            Console.Write("nhap sp");
+            n = int.Parse(Console.ReadLine());
             if (n < 2 || n > 100)
             {
-                Console.WriteLine("lio vl");
+                Console.WriteLine("loi");
             }
         } while (n < 2 || n > 100);
 
         List<HangXK> ds = new List<HangXK>();
         for (int i = 0; i < n; i++)
         {
-            Console.WriteLine($"asdsad{i + 1}");
-            HangXK hang = new HangXK();
-            hang.Nhap();
-            ds.Add(hang);
+            Console.Write($"Nhap san phan{i + 1}: ");
+            HangXK h = new HangXK();
+            h.Nhap();
+            ds.Add(h);
         }
 
-        Console.WriteLine("\n========== DANH SÁCH SẢN PHẨM XUẤT KHẨU ==========");
-        for(int i = 0; i < ds.Count; i++)
+        Console.WriteLine($"danh sp");
+        for (int i = 0; i < ds.Count; i++)
         {
-            Console.Write($"{i+1}");
+            Console.Write($"sp{i + 1}: ");
             ds[i].Xuat();
             Console.WriteLine();
         }
 
-        HangXK max= ds[0];
-        foreach(var hang in ds)
+
+        HangXK max = ds[0];
+        foreach (HangXK h in ds)
         {
-            if (hang.TinhThue() > max.TinhThue())
+            if (h.TinhThue() > max.TinhThue())
             {
-                max=hang;
+                max = h;
             }
         }
+
+        Console.WriteLine($"San pham co thue cao nhat: {max}");
         max.Xuat();
 
-        List<HangXK> dskotrung = new List<HangXK>();
-        List<string> madaGap = new List<string>();
+        ds.Sort((a, b) => a.TinhThue().CompareTo(b.TinhThue()));
 
-        foreach(var hang in ds)
+        for (int i = 0; i < ds.Count; i++)
         {
-            if (!madaGap.Contains(hang.MaHang))
-            {
-                dskotrung.Add(hang);
-                madaGap.Add(hang.MaHang);
-            }
-
+            Console.WriteLine($"San Pham{i + 1}: ");
+            ds[i].Xuat();
         }
 
-        for(int i = 0; i < dskotrung; i++)
+
+        List<HangXK> dskotrung = new List<HangXK>();
+        List<string> madagap = new List<string>();
+
+        foreach (var h in ds)
         {
-            Console.WriteLine($"{i+1}");
+            if (!madagap.Contains(h.MaHang))
+            {
+                dskotrung.Add(h);
+                madagap.Add(h.MaHang);
+            }
+        }
+
+        Console.WriteLine("\n===== DANH SÁCH SAU KHI XÓA TRÙNG MÃ =====");
+        for (int i = 0; i < dskotrung.Count; i++)
+        {
+            Console.WriteLine($"sanPham{i + 1}: ");
             dskotrung[i].Xuat();
         }
+
     }
 }

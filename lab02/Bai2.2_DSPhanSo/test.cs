@@ -1,242 +1,162 @@
-// using System;
+//Ban update Bai2.2
 
-// class PhanSo
-// {
-//     private int _tuSo;
-//     private int _mauSo;
+using System;
+using System.Collections.Generic;
 
-//     public int TuSo
-//     {
-//         get { return _tuSo; }
-//         set { _tuSo = value; }
-//     }
+class PhanSo
+{
+    private int _ts;
+    private int _ms;
 
-//     public int _mauSo
-//     {
-//         get { return _mauSo; }
-//         set
-//         {
-//             if (value != 0)
-//             {
-//                 _mauSo = value;
-//             }
-//             else
-//             {
-//                 Console.WriteLine("asdasdassd");
-//                 _mauSo = 1;
-//             }
-//         }
-//     }
+    public int TuSo
+    {
+        get { return _ts; }
+        set { _ts = value; }
+    }
 
-//     private int TimUCLN(int a, int b)
-//     {
-//         a = Math.Abs(a);
-//         b = Math.Abs(b);
-//         while (b != 0)
-//         {
-//             int temp = b;
-//             b = a % b;
-//             a = temp;
-//         }
-//         return a;
-//     }
+    public int MauSo
+    {
+        get { return _ms; }
+        set
+        {
+            if (value != 0)
+                _ms = value;
+            else
+                Console.WriteLine("Mau so khong the bang 0. Gan mac dinh = 1");
+        }
+    }
 
-//     public PhanSo()
-//     {
-//         _tuSo = 0;
-//         _mauSo = 1;
-//     }
+    public PhanSo() { }
 
-//     public PhanSo(int ts, int ms)
-//     {
-//         _tuSo = ts;
-//         if (ms != 0)
-//         {
-//             _mauSo = ms;
-//         }
-//         else
-//         {
-//             Console.WriteLine("Mau so khong the bang 0. Gan mac dinh = 1");
-//             _mauSo = 1;
-//         }
-//     }
+    public PhanSo(int ts, int ms)
+    {
+        _ts = ts;
+        if (ms != 0)
+            _ms = ms;
+        else
+        {
+            Console.WriteLine("Mau so khong the bang 0. Gan mac dinh = 1");
+            _ms = 1;
+        }
+    }
 
-//     public PhanSo(PhanSo p)
-//     {
-//         _tuSo = p._tuSo;
-//         _mauSo = p._mauSo;
-//     }
+    public PhanSo(PhanSo p)
+    {
+        _ts = p._ts;
+        _ms = p._ms;
+    }
 
-//     public void Nhap()
-//     {
-//         Console.WriteLine("assddasda");
-//         _tuSo = int.Parse(Console.ReadLine() ?? "0");
+    public void Nhap()
+    {
+        Console.Write("Nhap tu so: ");
+        _ts = int.Parse(Console.ReadLine());
 
-//         do
-//         {
-//             Console.WriteLine("Nasdasdas: ");
-//             _mauSo = int.Parse(Console.ReadLine() ?? "1");
+        do
+        {
+            Console.Write("Nhap mau so: ");
+            _ms = int.Parse(Console.ReadLine());
+            if (_ms == 0) Console.WriteLine("Mau so khong the = 0");
+        } while (_ms == 0);
+    }
 
-//             if (_mauSo == 0)
-//             {
-//                 Console.WriteLine("asdasdsa");
-//             }
-//         } while (_mauSo == 0);
-//     }
+    public void Xuat()
+    {
+        if (_ms == 1)
+            Console.Write(_ts);
+        else if (_ms < 0)
+            Console.Write($"{-_ts}/{-_ms}");
+        else
+            Console.Write($"{_ts}/{_ms}");
+    }
 
-//     public void Xuat()
-//     {
-//         if (_mauSo == 1)
-//         {
-//             Console.Write(_tuSo);
-//         }
-//         else if (_mauSo < 0)
-//         {
-//             Console.Write($"{-_tuSo}/{-_mauSo}");
-//         }
-//         else
-//         {
-//             Console.Write($"{_tuSo}/{_mauSo}");
-//         }
-//     }
+    public double LayGiaTri()
+    {
+        return (double)_ts / _ms;
+    }
 
-//     public void ToiGian()
-//     {
-//         int ucln = TimUCLN(_tuSo, _mauSo);
-//         _tuSo /= ucln;
-//         _mauSo /= ucln;
+    private int TimUCLN(int a, int b)
+    {
+        a = Math.Abs(a);
+        b = Math.Abs(b);
+        while (b != 0)
+        {
+            int tem = b;
+            b = a % b;
+            a = tem;
+        }
+        return a;
+    }
 
-//         if (_mauSo < 0)
-//         {
-//             _tuSo = -_tuSo;
-//             _mauSo = -_mauSo;
-//         }
-//     }
+    public void ToiGian()
+    {
+        int ucln = TimUCLN(_ts, _ms);
+        _ts /= ucln;
+        _ms /= ucln;
 
-//     public double LayGiaTri()
-//     {
-//         return (double)_tuSo / _mauSo;
-//     }
+        if (_ms < 0)
+        {
+            _ts = -_ts;
+            _ms = -_ms;
+        }
+    }
+}
 
-//     public int SoSanh(PhanSo p)
-//     {
-//         double gt1 = this.LayGiaTri();
-//         double gt2 = p.LayGiaTri();
+class Program
+{
+    static void Main(string[] args)
+    {
+        Console.OutputEncoding = System.Text.Encoding.UTF8;
 
-//         if (gt1 < gt2)
-//         {
-//             return -1;
-//         }
-//         else if (gt1 > gt2)
-//         {
-//             return 1;
-//         }
-//         else
-//         {
-//             return 0;
-//         }
-//     }
-// }
+        List<PhanSo> ds = new List<PhanSo>();
 
-// class DSPhanSo
-// {
-//     private PhanSo[] _dsPS;
-//     private int _size;
+        Console.Write("Nhap so luong phan so: ");
+        int n = int.Parse(Console.ReadLine());
 
-//     public int Size
-//     {
-//         get { return _size; }
-//         set
-//         {
-//             _size = value;
-//         }
-//     }
+        // Nhap
+        Console.WriteLine("========== NHAP DANH SACH PHAN SO ==========");
+        for (int i = 0; i < n; i++)
+        {
+            Console.WriteLine($"\n--- Nhap phan so thu {i + 1} ---");
+            PhanSo ps = new PhanSo();
+            ps.Nhap();
+            ps.ToiGian();
+            ds.Add(ps);
+        }
 
-//     public DSPhanSo()
-//     {
-//         _size = 0;
-//         _dsPS = null;
-//     }
+        // Xuat
+        Console.WriteLine("\n========== DANH SACH PHAN SO VUA NHAP ==========");
+        Console.WriteLine($"Danh sach co {n} phan so: ");
+        for (int i = 0; i < ds.Count; i++)
+        {
+            Console.Write($"PS{i + 1} = ");
+            ds[i].Xuat();
+            Console.WriteLine();
+        }
 
-//     public DSPhanSo(int n)
-//     {
-//         _size = n;
-//         _dsPS = new PhanSo[n];
-//         for (int i = 0; i < n; i++)
-//         {
-//             _dsPS[i] = new PhanSo();
-//         }
-//     }
+        // Tim max
+        Console.WriteLine("\n========== PHAN SO LON NHAT ==========");
+        PhanSo max = ds[0];
+        foreach (PhanSo ps in ds)
+        {
+            if (ps.LayGiaTri() > max.LayGiaTri())
+                max = ps;
+        }
+        Console.Write("Phan tu lon nhat: ");
+        max.Xuat();
+        Console.WriteLine();
 
-//     public void Nhap()
-//     {
-//         Console.Write("sdadasd");
-//         _size = int.Parse(Console.ReadLine() ?? "0");
+        // Sap xep tang dan
+        ds.Sort((a, b) => a.LayGiaTri().CompareTo(b.LayGiaTri()));
+        Console.WriteLine("\n========== SAP XEP TANG DAN ==========");
+        Console.WriteLine("Danh sach sau khi sap xep: ");
+        for (int i = 0; i < ds.Count; i++)
+        {
+            Console.Write($"PS{i + 1} = ");
+            ds[i].Xuat();
+            Console.WriteLine();
+        }
 
-//         _dsPS = new PhanSo[_size];
-
-//         for (int i = 0; i < _size; i++)
-//         {
-//             Console.WriteLine($"asdasdsad{i + 1}");
-//             _dsPS[i] = new PhanSo();
-//             _dsPS[i].Nhap();
-//             _dsPS[i].ToiGian();
-//         }
-//     }
-
-//     public void Xuat()
-//     {
-//         if (_size == 0 || _dsPS == null)
-//         {
-//             Console.WriteLine("Danh sach rong!");
-//             return;
-//         }
-
-//         Console.WriteLine($"sdadsa{_size}sadsada");
-//         for(int i = 0; i < _size; i++)
-//         {
-//             Console.Write($"PS{i+1}= ");
-//             _dsPS[i].Xuat();
-//             Console.WriteLine();
-//         }
-//     }
-
-
-//     public void SapXepTangDan()
-//     {
-//         if (_size == 0 || _dsPS == null)
-//         {
-//             return null;
-//         }
-
-//         for(int i = 0; i < _size - 1; i++)
-//         {
-//             for(int j = 0; j < _size - i - 1; j++)
-//             {
-//                 if (_dsPS[j].SoSanh(_dsPS[j + 1]) > 0)
-//                 {
-//                     PhanSo temp=_dsPS[j];
-//                     _dsPS[j]=_dsPS[j+1];
-//                     _dsPS[j+1]= temp;
-//                 }
-//             }
-//         }
-//     }
-// }
-// class Program
-// {
-//     static void Main(string[] args)
-//     {
-//         DSPhanSo ds = new PhanSo();
-//         ds.Nhap();
-//         ds.Xuat();
-//         PhanSo max = ds.TimMax();
-//         if(max!= null)
-//         {
-//             max.Xuat();
-//         }
-
-//         ds.SapXepTangDan();
-//         ds.Xuat();
-//     }
-// }
+        Console.WriteLine("\n\nNhan phim bat ky de thoat...");
+        Console.ReadKey();
+    }
+}

@@ -1,257 +1,135 @@
 using System;
 
-class PhanSo
+class Stack
 {
-    private int _ts;
-    private int _ms;
+    private int top;
+    private int Max;
+    private int[] stack;
 
-    public int TuSo
+    public Stack(int max)
     {
-        get { return _ts; }
-        set { _ts = value; }
+        Max = max;
+        stack = new int[Max];
+        top = -1;
     }
-    public int MauSo
+
+    public bool IsEmpty()
     {
-        get { return _ts; }
-        set
+        return top == -1;
+    }
+
+    public bool IsFull()
+    {
+        return top == Max - 1;
+    }
+
+    public void Push(int data)
+    {
+        if (IsFull())
         {
-            if (value != 0)
-            {
-                _ms = value;
-            }
-            else
-            {
-                Console.WriteLine("Mau so khong the bang 0. Gan mac dinh = 1");
-                _ms = 1;
-            }
+            Console.WriteLine("asdasdas");
+            return;
         }
+        top++;
+        stack[top] = data;
     }
 
-    private int TimUCLN(int a, int b)
+    public int Pop()
     {
-        a = Math.Abs(a);
-        b = Math.Abs(b);
-        while (b != 0)
+        if (IsEmpty())
         {
-            int temp = b;
-            b = a % b;
-            a = temp;
-        }
-        return a;
-    }
-
-    public PhanSo()
-    {
-        _ts = 0;
-        _ms = 1;
-    }
-
-    public PhanSo(int ts, int ms)
-    {
-        _ts = ts;
-        if (ms != 0)
-        {
-            _ms = ms;
-        }
-        else
-        {
-            Console.WriteLine("sadsadsadas");
-            _ms = 1;
-        }
-    }
-    public PhanSo(PhanSo p)
-    {
-        _ts = p._ts;
-        _ms = p._ms;
-    }
-
-    public void Nhap()
-    {
-        Console.Write("Nhap tu so: ");
-        _ts = int.Parse(Console.ReadLine() ?? "0");
-
-        do
-        {
-            Console.Write("Nhap mau so: ");
-            _ms = int.Parse(Console.ReadLine() ?? "1");
-
-            if (_ms == 0)
-            {
-                Console.WriteLine("Mau so khong the = 0");
-            }
-        } while (_ms == 0);
-    }
-
-    public void Xuat()
-    {
-        if (_ms == 1)
-        {
-            Console.Write(_ts);
-        }
-        else if (_mauSo < 0)
-        {
-            Console.Write($"{-_tuSo}/{-_mauSo}");
-        }
-        else
-        {
-            Console.Write($"{_tuSo}/{_mauSo}");
-        }
-    }
-
-    public void ToiGian()
-    {
-        int ucln = TimUCLN(_ts, _ms);
-        _ts /= ucln;
-        _ms /= ucln;
-        if (_ms < 0)
-        {
-            _tuSo = -_tuSo;
-            _mauSo = -_mauSo;
-        }
-    }
-
-    public double LayGiaTri()
-    {
-        return (double)_ts / _ms;
-    }
-
-    public int SoSanh(PhanSo p)
-    {
-        double gt1 = this.LayGiaTri();
-        double gt2 = p.LayGiaTri();
-
-        if (gt1 < gt2)
-        {
+            Console.WriteLine("asdasddas");
             return -1;
         }
-        else if (gt1 > gt2)
+        int giatri = stack[top];
+        top--;
+        return giatri;
+    }
+
+    public int Peek()
+    {
+        if (IsEmpty())
         {
-            return 1;
+            Console.WriteLine("sdadasd");
+            return -1;
         }
-        else
+        return stack[top];
+    }
+
+
+    public void Print()
+    {
+        if (IsEmpty())
         {
-            return 0;
-        }
-    }
-}
-
-class DSPhanSo
-{
-    private PhanSo[] _dsPS;
-    private int _size;
-
-    public int Size
-    {
-        get { return _size; }
-        set { _size = value; }
-    }
-
-    public DSPhanSo()
-    {
-        _size = 0;
-        _dsPS = null;
-    }
-
-    public DSPhanSo(int n)
-    {
-        _size = n;
-        _dsPS = new PhanSo[n];
-        for (int i = 0; i < n; i++)
-        {
-            _dsPS[i] = new PhanSo();
-        }
-    }
-
-    public void Nhap()
-    {
-        Console.Write("Nhap so luong phan so: ");
-        _size = int.Parse(Console.ReadLine());
-        _dsPS = new PhanSo[_size];
-
-        for (int i = 0; i < _size; i++)
-        {
-            Console.WriteLine($"\n--- Nhap phan so thu {i + 1} ---");
-            _dsPS[i] = new PhanSo();
-            _dsPS[i].Nhap();
-            _dsPS[i].ToiGian();
-        }
-    }
-
-    public void Xuat()
-    {
-        if (_size == 0 || _dsPS == null)
-        {
+            Console.WriteLine("sadsa");
             return;
         }
-        Console.WriteLine($"{_size}");
-        for (int i = 0; i < _size; i++)
+        for (int i = top; i >= 0; i--)
         {
-            Console.Write($"Ps{i + 1}: ");
-            _dsPS[i].Xuat();
-            Console.WriteLine();
+            Console.Write(stack[i] + " ");
         }
+        Console.WriteLine();
     }
-
-    public PhanSo TimMax()
-    {
-        if (_size == 0 || _dsPS == null)
-        {
-            return;
-        }
-        PhanSo max = _dsPS[0];
-        for (int i = 0; i < _size; i++)
-        {
-            if (_dsPS[i].SoSanh(max) > 0)
-            {
-                max = _dsPS[i];
-            }
-            return max;
-        }
-    }
-
-    public void SapXepTangDan()
-    {
-        if (_size == 0 || _dsPS == null)
-        {
-            Console.WriteLine("Danh sach rong!");
-            return;
-        }
-        Array.Sort(_dsPS (a, b) => a.LayGiaTri().CompareTo(b.LayGiaTri()));
-
-        // for(int i = 0; i < _size - 1; i++)
-        // {
-        //     for(int j = 0; j < _size - i - 1; j++)
-        //     {
-        //         if (_dsPS[i].SoSanh(_dsPS[i + 1]) > 0)
-        //         {
-        //             PhanSo temp=_dsPS[i];
-        //             _dsPS[i]=_dsPS[i+1];
-        //             _dsPS[i+1]=temp;
-        //         }
-        //     }
-        // }
-    }
-
 }
 
 class test
 {
-    static void Main(string[] args)
+    static void PhanTichThuaSo(int n)
     {
-        DSPhanSo ds = new DSPhanSo();
-
-        ds.Nhap();
-        ds.Xuat;
-
-        PhanSo max = ds.TimMax();
-        if (max != null)
+        if (n <= 1)
         {
-            max.Xuat();
-            Console.WriteLine();
+            return;
         }
 
-        ds.SapXepTangDan();
-        ds.Xuat();
+        Stack s = new Stack(100);
+        int tam=n;
 
+        for(int uoc = 2; uoc * uoc <= tam; uoc++)
+        {
+            while (tam % uoc == 0)
+            {
+                s.Push(uoc);
+                tam/=uoc;
+            }
+        }
+
+        if (tam > 1)
+        {
+            s.Push(tam);
+        }
+
+        Console.Write($"{n}=");
+        while (!s.IsEmpty())
+        {
+            Console.Write(s.Pop());
+            if (!s.IsEmpty())
+            {
+                Console.Write(" * ");
+            }
+        }
+        Console.WriteLine();
+    }
+
+    static void DoiSangNhiPhan(int n)
+    {
+        if (n == 0)
+        {
+            return;
+        }
+        Stack s=new Stack(64);
+        int tam=Math.Abs(n);
+
+        while (tam > 0)
+        {
+            s.Push(tam%2);
+            tam/=2;
+        }
+
+        Console.Write($"{n}");
+        if(n<0) Console.Write("-");
+        while (!s.IsEmpty())
+        {
+            Console.Write(s.Pop());
+        }
     }
 }

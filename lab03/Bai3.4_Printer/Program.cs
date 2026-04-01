@@ -1,4 +1,28 @@
-﻿using System;
+﻿// Xây dựng lớp Printer mô tả máy in.
+// Các thuộc tính:
+// - Nhà sản xuất (vd: Canon)
+// - Giá bán.
+// Các phương thức:
+// + Khởi tạo
+// + Nhập
+// + Xuất
+
+// Xây dựng lớp LaserPrinter mô tả máy in laser.
+// Các thuộc tính:
+// - Độ phân giải (dpi, vd: 1200x1200)
+// Các phương thức:
+// + Khởi tạo
+// + Nhập
+// + Xuất
+
+// Chương trình chính:
+// - Nhập danh sách n máy in laser.
+// - In ra danh sách và thông số kèm theo.
+// - Tìm máy in có giá thấp nhất, cao nhất.
+// - Lọc danh sách máy in theo tên hãng sản xuất.
+// - Sắp xếp danh sách xe theo thứ tự tăng dần của giá bán, in ra danh sách sau sắp xếp.
+
+using System;
 using System.Collections.Generic;
 
 class Printer
