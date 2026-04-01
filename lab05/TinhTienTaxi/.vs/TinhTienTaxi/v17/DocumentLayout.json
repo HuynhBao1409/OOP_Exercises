@@ -1,0 +1,74 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Project_ABeo\\OOP_Exercises\\lab05\\TinhTienTaxi\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{542A03E2-AA40-4FBC-9EBE-B4022FAEEF9B}|TinhTienTaxi\\TinhTienTaxi.csproj|d:\\project_abeo\\oop_exercises\\lab05\\tinhtientaxi\\tinhtientaxi\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{542A03E2-AA40-4FBC-9EBE-B4022FAEEF9B}|TinhTienTaxi\\TinhTienTaxi.csproj|solutionrelative:tinhtientaxi\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{542A03E2-AA40-4FBC-9EBE-B4022FAEEF9B}|TinhTienTaxi\\TinhTienTaxi.csproj|d:\\project_abeo\\oop_exercises\\lab05\\tinhtientaxi\\tinhtientaxi\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{542A03E2-AA40-4FBC-9EBE-B4022FAEEF9B}|TinhTienTaxi\\TinhTienTaxi.csproj|solutionrelative:tinhtientaxi\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{542A03E2-AA40-4FBC-9EBE-B4022FAEEF9B}|TinhTienTaxi\\TinhTienTaxi.csproj|d:\\project_abeo\\oop_exercises\\lab05\\tinhtientaxi\\tinhtientaxi\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{542A03E2-AA40-4FBC-9EBE-B4022FAEEF9B}|TinhTienTaxi\\TinhTienTaxi.csproj|solutionrelative:tinhtientaxi\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "D:\\Project_ABeo\\OOP_Exercises\\lab05\\TinhTienTaxi\\TinhTienTaxi\\Form1.cs",
+              "RelativeDocumentMoniker": "TinhTienTaxi\\Form1.cs",
+              "ToolTip": "D:\\Project_ABeo\\OOP_Exercises\\lab05\\TinhTienTaxi\\TinhTienTaxi\\Form1.cs [Design]",
+              "RelativeToolTip": "TinhTienTaxi\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T04:07:56.085Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "D:\\Project_ABeo\\OOP_Exercises\\lab05\\TinhTienTaxi\\TinhTienTaxi\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "TinhTienTaxi\\Form1.Designer.cs",
+              "ToolTip": "D:\\Project_ABeo\\OOP_Exercises\\lab05\\TinhTienTaxi\\TinhTienTaxi\\Form1.Designer.cs",
+              "RelativeToolTip": "TinhTienTaxi\\Form1.Designer.cs",
+              "ViewState": "AgIAAHQAAAAAAAAAAAAAAIUAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T04:07:24.755Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "D:\\Project_ABeo\\OOP_Exercises\\lab05\\TinhTienTaxi\\TinhTienTaxi\\Form1.cs",
+              "RelativeDocumentMoniker": "TinhTienTaxi\\Form1.cs",
+              "ToolTip": "D:\\Project_ABeo\\OOP_Exercises\\lab05\\TinhTienTaxi\\TinhTienTaxi\\Form1.cs",
+              "RelativeToolTip": "TinhTienTaxi\\Form1.cs",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAQwGgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T04:06:39.47Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

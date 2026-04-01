@@ -1,0 +1,17 @@
+D:\Project_ABeo\OOP_Exercises\lab05\TinhTienTaxi\TinhTienTaxi\bin\Debug\net9.0-windows\TinhTienTaxi.exe
+D:\Project_ABeo\OOP_Exercises\lab05\TinhTienTaxi\TinhTienTaxi\bin\Debug\net9.0-windows\TinhTienTaxi.deps.json
+D:\Project_ABeo\OOP_Exercises\lab05\TinhTienTaxi\TinhTienTaxi\bin\Debug\net9.0-windows\TinhTienTaxi.runtimeconfig.json
+D:\Project_ABeo\OOP_Exercises\lab05\TinhTienTaxi\TinhTienTaxi\bin\Debug\net9.0-windows\TinhTienTaxi.dll
+D:\Project_ABeo\OOP_Exercises\lab05\TinhTienTaxi\TinhTienTaxi\bin\Debug\net9.0-windows\TinhTienTaxi.pdb
+D:\Project_ABeo\OOP_Exercises\lab05\TinhTienTaxi\TinhTienTaxi\obj\Debug\net9.0-windows\TinhTienTaxi.Form1.resources
+D:\Project_ABeo\OOP_Exercises\lab05\TinhTienTaxi\TinhTienTaxi\obj\Debug\net9.0-windows\TinhTienTaxi.csproj.GenerateResource.cache
+D:\Project_ABeo\OOP_Exercises\lab05\TinhTienTaxi\TinhTienTaxi\obj\Debug\net9.0-windows\TinhTienTaxi.GeneratedMSBuildEditorConfig.editorconfig
+D:\Project_ABeo\OOP_Exercises\lab05\TinhTienTaxi\TinhTienTaxi\obj\Debug\net9.0-windows\TinhTienTaxi.AssemblyInfoInputs.cache
+D:\Project_ABeo\OOP_Exercises\lab05\TinhTienTaxi\TinhTienTaxi\obj\Debug\net9.0-windows\TinhTienTaxi.AssemblyInfo.cs
+D:\Project_ABeo\OOP_Exercises\lab05\TinhTienTaxi\TinhTienTaxi\obj\Debug\net9.0-windows\TinhTienTaxi.csproj.CoreCompileInputs.cache
+D:\Project_ABeo\OOP_Exercises\lab05\TinhTienTaxi\TinhTienTaxi\obj\Debug\net9.0-windows\TinhTienTaxi.sourcelink.json
+D:\Project_ABeo\OOP_Exercises\lab05\TinhTienTaxi\TinhTienTaxi\obj\Debug\net9.0-windows\TinhTienTaxi.dll
+D:\Project_ABeo\OOP_Exercises\lab05\TinhTienTaxi\TinhTienTaxi\obj\Debug\net9.0-windows\refint\TinhTienTaxi.dll
+D:\Project_ABeo\OOP_Exercises\lab05\TinhTienTaxi\TinhTienTaxi\obj\Debug\net9.0-windows\TinhTienTaxi.pdb
+D:\Project_ABeo\OOP_Exercises\lab05\TinhTienTaxi\TinhTienTaxi\obj\Debug\net9.0-windows\TinhTienTaxi.genruntimeconfig.cache
+D:\Project_ABeo\OOP_Exercises\lab05\TinhTienTaxi\TinhTienTaxi\obj\Debug\net9.0-windows\ref\TinhTienTaxi.dll
