@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Windows.Forms;
 
 namespace Flappy_Bird
@@ -6,9 +8,9 @@ namespace Flappy_Bird
     public partial class Form1 : Form
     {
         int tocDoPipe = 8;
-        int trongLuc = 15;
         int diemSo = 0;
         bool dangNhan = false;
+        float tocDoRoi = 0f;   
 
         public Form1()
         {
@@ -21,7 +23,8 @@ namespace Flappy_Bird
         {
             if (keyData == Keys.Space)
             {
-                dangNhan = true;
+                //dangNhan = true;
+                tocDoRoi = -15f;
                 return true;
             }
             return base.ProcessCmdKey(ref msg, keyData);
@@ -30,19 +33,13 @@ namespace Flappy_Bird
         private void xuLyNhanPhim(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Space)
-            {
-                trongLuc = -15;
                 dangNhan = true;
-            }
         }
 
         private void xuLyThaPhim(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Space)
-            {
-                trongLuc = 15;
                 dangNhan = false;
-            }
         }
 
         private void ketThucGame()
@@ -54,20 +51,28 @@ namespace Flappy_Bird
 
         private void gameTimerEvent(object sender, EventArgs e)
         {
-            if (dangNhan)
-                trongLuc = -15;
-            else
-                trongLuc = 15;
+            //// Tính velocity
+            //if (dangNhan)
+            //    tocDoRoi -= 5f;   // lực đẩy lên
+            //else
+            //    tocDoRoi += 15f;   // trọng lực
 
-            flappyBird.Top += trongLuc;
+            //tocDoRoi = Math.Max(-15f, Math.Min(tocDoRoi, 15f)); // giới hạn velocity
 
-            // 2 ống di chuyển cùng nhau
+            tocDoRoi += 0.8f;  // gia tốc trọng lực — tăng dần đều
+            tocDoRoi = Math.Min(tocDoRoi, 12f);
+
+            flappyBird.Top += (int)tocDoRoi;
+
+            // Xoay bird theo velocity
+            float goc = Math.Max(-30f, Math.Min(tocDoRoi * 4f, 90f));
+            XoayBird(goc);
+
             pipeBottom.Left -= tocDoPipe;
             pipeTop.Left = pipeBottom.Left;
 
             scoreText.Text = "Điểm: " + diemSo;
 
-            // Reset cả 2 ống cùng lúc
             if (pipeBottom.Left < -150)
             {
                 pipeBottom.Left = 800;
@@ -87,17 +92,40 @@ namespace Flappy_Bird
                 tocDoPipe = 15;
         }
 
+        private void XoayBird(float goc)
+        {
+            if (flappyBird.Image == null) return;
+
+            Bitmap original = new Bitmap(
+                Application.StartupPath + "\\Resources\\bird.png");
+
+            Bitmap rotated = new Bitmap(original.Width, original.Height);
+            rotated.SetResolution(original.HorizontalResolution, original.VerticalResolution);
+
+            using (Graphics g = Graphics.FromImage(rotated))
+            {
+                g.Clear(Color.Transparent);
+                g.InterpolationMode = InterpolationMode.HighQualityBicubic;
+                g.TranslateTransform(original.Width / 2f, original.Height / 2f);
+                g.RotateTransform(goc);
+                g.TranslateTransform(-original.Width / 2f, -original.Height / 2f);
+                g.DrawImage(original, new Point(0, 0));
+            }
+
+            flappyBird.Image = rotated;
+            original.Dispose();
+        }
+
         private void btnRestart_Click(object sender, EventArgs e)
         {
             diemSo = 0;
             tocDoPipe = 8;
-            trongLuc = 15;
+            tocDoRoi = 0f;
             dangNhan = false;
 
             flappyBird.Top = 228;
             flappyBird.Left = 69;
 
-            // Reset 2 ống về cùng vị trí
             pipeBottom.Left = 800;
             pipeTop.Left = 800;
 

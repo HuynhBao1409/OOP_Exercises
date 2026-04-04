@@ -19,3 +19,4 @@ D:\Project_ABeo\OOP_Exercises\lab05\Flappy_Bird\Flappy_Bird\bin\Debug\net9.0-win
 D:\Project_ABeo\OOP_Exercises\lab05\Flappy_Bird\Flappy_Bird\bin\Debug\net9.0-windows\Resources\ground.png
 D:\Project_ABeo\OOP_Exercises\lab05\Flappy_Bird\Flappy_Bird\bin\Debug\net9.0-windows\Resources\pipe.png
 D:\Project_ABeo\OOP_Exercises\lab05\Flappy_Bird\Flappy_Bird\bin\Debug\net9.0-windows\Resources\pipedown.png
+D:\Project_ABeo\OOP_Exercises\lab05\Flappy_Bird\Flappy_Bird\obj\Debug\net9.0-windows\Flappy_Bird.Properties.Resources.resources
