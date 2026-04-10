@@ -45,7 +45,7 @@ class Printer
     public string GetNhaSanXuat() { return nhaSanXuat; }
     public double GetGia() { return gia; }
 
-    public virtual void Nhap()
+    public virtual void Nhap()//virtual + override là lớp đa hình
     {
         Console.Write("  Nhà sản xuất: ");
         nhaSanXuat = Console.ReadLine();

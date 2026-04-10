@@ -4,19 +4,20 @@ using System.Collections.Generic;
 abstract class Shape
 {
     public string Name { get; set; }
+
     public abstract double Area();
 
     public virtual void Xuat()
     {
-        Console.WriteLine($"Ten {Name}");
-        Console.WriteLine($"DT: {Area():F2}");
+        Console.WriteLine($"Ten: {Name}");
+        Console.WriteLine($"Dien tich: {Area():F2}");
     }
 }
 
 class HCM : Shape
 {
-    protected double width;
-    protected double height;
+    private double width;
+    private double height;
 
     public HCM(double width, double height)
     {
@@ -27,51 +28,67 @@ class HCM : Shape
 
     public override double Area()
     {
-        width* height;
+        return width * height;
     }
 
     public override void Xuat()
     {
-        Console.WriteLine("  [Hinh Chu Nhat]");
-        Console.WriteLine($"  Width : {width}");
-        Console.WriteLine($"  Height: {height}");
-        Console.WriteLine($"  Diện tích: {Area():F2}");
+        Console.WriteLine("HCM");
+        Console.WriteLine($"Dai: {width}");
+        Console.WriteLine($"Rong: {height}");
+        Console.WriteLine($"Dien Tich: {Area():F2}");
+
     }
 }
 
 class HV : HCM
 {
-    public HV(double w) : base(w, w)
+    public HV(double canh) : base(canh, canh)
     {
         Name = "HV";
+
     }
 
     public override void Xuat()
     {
-        Console.WriteLine("[HV]");
-        Console.WriteLine($"Canh {width}");
-        Console.WriteLine($"DT: {Area():F2}");
-    }
-}
-class HT : Shape
-{
-    private double r;
-    public HT(double r)
-    {
-        this.r = r;
-        Name = "HT";
+        Console.WriteLine("  [Hinh Vuong]");
+        Console.WriteLine($"  Cạnh: {width}");
+        Console.WriteLine($"  Diện tích: {Area():F2}");
     }
 }
 
-class TG : Shape
+class Circle : Shape
+{
+    private double R;
+    public Circle(double R)
+    {
+        this.R = R;
+        Name = "HTT";
+    }
+
+    public override double Area()
+    {
+        return Math.PI * R * R;
+    }
+
+    public override void Xuat()
+    {
+        Console.WriteLine("  [Hinh Tron]");
+        Console.WriteLine($"  Radius: {R}");
+        Console.WriteLine($"  Diện tích: {Area():F2}");
+    }
+}
+
+class Triangle : Shape
 {
     private double a, b, c;
-    public TG(double a, double b, double c)
+
+    public Triangle(double a, double b, double c)
     {
         this.a = a;
         this.b = b;
         this.c = c;
-        Name = "TG";
+        Name = "Tam giac";
     }
 
     public override double Area()
@@ -82,9 +99,9 @@ class TG : Shape
 
     public override void Xuat()
     {
-        Console.WriteLine($"[TG]");
-        Console.WriteLine($"a={a}, b={b}, c={c}");
-        Console.WriteLine($"DT: {Area():F2}");
+        Console.WriteLine("tam giac");
+        Console.WriteLine($"a= {a},b= {b},c= {c}");
+        Console.WriteLine($"  Diện tích: {Area():F2}");
     }
 }
 
@@ -92,74 +109,72 @@ class test
 {
     static void Main()
     {
-        List<Shape> shape = new List<Shape>();
+        List<Shape> ds = new List<Shape>();
 
-        Console.Write("Nhap so hinh ve");
-        int n = int.Parse(Console.ReadLine());
+        Console.Write("Nhap so hinh ve: ");
+        int n=int.Parse(Console.ReadLine());
 
-        for (int i = 0; i < n; i++)
+        for(int i = 0; i < n; i++)
         {
-            Console.WriteLine($"\n hinh {i + 1}");
-            Console.WriteLine($"chon hinh");
-            int loai = int.Parse(Console.ReadLine());
+            Console.WriteLine($"\n--- Hình thứ {i + 1} ---");
+            Console.WriteLine("Chọn loại hình (1:HCN, 2:HV, 3:Circle, 4:Triangle): ");
+            int loai=int.Parse(Console.ReadLine());
 
             if (loai == 1)
             {
-                Console.Write("with:");
+               Console.Write("Width: ");
                 double w = double.Parse(Console.ReadLine());
                 Console.Write("Height: ");
                 double h = double.Parse(Console.ReadLine());
 
-                shape.Add(new HCM(w, h));
+                 ds.Add(new HCM(w,h));
             }
             else if (loai == 2)
             {
-                Console.WriteLine("Sile: ");
-                double s = double.Parse(Console.ReadLine());
-                shape.Add(new HV(s));
+                Console.Write("Side: ");
+                double canh=double.Parse(Console.ReadLine());
+                ds.Add(new HV(canh));
             }
-            else if (loai == 3)
+             else if (loai == 3)
             {
-                Console.WriteLine("HT: ");
+                Console.Write("Radius: ");
                 double r = double.Parse(Console.ReadLine());
-                shape.Add(new HT());
-            }
-            else if (loai == 4)
+                shapes.Add(new Circle(r));
+            }else if (loai == 4)
             {
-                Console.WriteLine("a: ");
+                Console.Write("a: ");
                 double a=double.Parse(Console.ReadLine());
-                Console.WriteLine("b: ");
+                Console.Write("b: ");
                 double b=double.Parse(Console.ReadLine());
-                Console.WriteLine("c: ");
+                Console.Write("c: ");
                 double c=double.Parse(Console.ReadLine());
-                shape.Add(new HT(a,b,c));
 
+                ds.Add(new Triangle(a,b,c));
+                //ds=new Triangle(a,b,c);
             }
         }
 
-        Console.WriteLine("\nDanh sach hinh ve");
-        for(int i = 0; i < shape.Count; i++)
+        for(int i = 0; i < ds.Count; i++)
         {
-            Console.WriteLine($"\nHinh{i+1}");
-            shape[i].Xuat();
+            Console.WriteLine($"\nHinh {i+1}: ");
+            ds[i].Xuat();
         }
 
-        Shape max=shape[0];
-        foreach(Shape s in shape)
+        Shape max = ds[0];
+        foreach(Shape s in ds)
         {
             if (s.Area() > max.Area())
             {
                 max=s;
             }
         }
-        Console.WriteLine($"Lon nhat- {max.Name}-{max.Area():F2}");
+        Console.WriteLine($"\nHinh co dien tich lon nhat {max.Name} - dien tich: {max.Area():F2}");
 
-        shape.Sort((a,b)=>b.Area().CompareTo(a.Area()));
-
-        for(int i; i < shape.Count; i++)
+        ds.Sort((a,b)=>b.Area().CompareTo(a.Area()));
+        for(int i = 0; i < ds.Count; i++)
         {
-            Console.WriteLine($"\nHinh{i+1}");
-            shape[i].Xuat();
+            Console.WriteLine($"\nHình #{i + 1}:");
+            ds[i].Xuat();
         }
     }
 }

@@ -87,8 +87,17 @@ class XeCon : Xe
         Console.Write(" Nhập số chỗ: ");
         soCho = int.Parse(Console.ReadLine());
 
-        Console.Write("  Nhập loại xe (sedan/SUV/bán tải): ");
-        loaiXe = Console.ReadLine();
+        bool hopLe = false;
+        do
+        {
+            Console.Write("  Nhập loại xe (sedan/SUV/bantai): ");
+            string nhap = Console.ReadLine().ToLower();
+            if (nhap == "sedan" || nhap == "SUV" || nhap == "bantai")
+            {
+                loaiXe = nhap;
+                hopLe = true;
+            }
+        } while (!hopLe);
     }
 
     // Override phương thức Xuat() để in thêm thông tin của XeCon

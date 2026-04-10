@@ -29,7 +29,7 @@ class NhanVien
     {
         this.hoTen = hoTen;
         this.ngaySinh = ngaySinh;
-        this.luong = 0;
+        this.luong = luong;
     }
 
     public string GetHoTen() { return hoTen; }
@@ -45,10 +45,7 @@ class NhanVien
         ngaySinh = DateTime.ParseExact(Console.ReadLine(), "dd/MM/yyyy", null);
     }
     //Tính lương(override ở lớp con)
-    public virtual void TinhLuong()
-    {
-
-    }
+    public virtual void TinhLuong() { }
 
     public virtual void Xuat()
     {

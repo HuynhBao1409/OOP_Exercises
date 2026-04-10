@@ -35,6 +35,7 @@
             this.panelCanvas.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelCanvas_MouseDown);
             this.panelCanvas.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panelCanvas_MouseUp);
             this.panelCanvas.Paint += new System.Windows.Forms.PaintEventHandler(this.panelCanvas_Paint);
+            this.panelCanvas.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panelCanvas_MouseMove);
 
             //  grpShape: GroupBox chọn loại hình 
             this.grpShape.Controls.Add(this.rdoEllipse);
@@ -54,9 +55,9 @@
             this.rdoEllipse.TabIndex = 0;
             this.rdoEllipse.Text = "Ellipse";
 
-            //  rdoRectangle: radio "Rectangle" (mặc định chọn) 
+            //  rdoRectangle: radio "Rectangle" (mặc định) 
             this.rdoRectangle.AutoSize = true;
-            this.rdoRectangle.Checked = true;   // mặc định chọn Rectangle
+            this.rdoRectangle.Checked = true;   
             this.rdoRectangle.Location = new System.Drawing.Point(15, 48);
             this.rdoRectangle.Name = "rdoRectangle";
             this.rdoRectangle.Size = new System.Drawing.Size(90, 20);

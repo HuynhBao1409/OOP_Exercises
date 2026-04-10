@@ -1,0 +1,15 @@
+D:\Project_ABeo\OOP_Exercises\lab03\BaiOnTap_3\obj\Debug\net10.0\BaiOnTap_3.GeneratedMSBuildEditorConfig.editorconfig
+D:\Project_ABeo\OOP_Exercises\lab03\BaiOnTap_3\obj\Debug\net10.0\BaiOnTap_3.AssemblyInfoInputs.cache
+D:\Project_ABeo\OOP_Exercises\lab03\BaiOnTap_3\obj\Debug\net10.0\BaiOnTap_3.AssemblyInfo.cs
+D:\Project_ABeo\OOP_Exercises\lab03\BaiOnTap_3\obj\Debug\net10.0\BaiOnTap_3.csproj.CoreCompileInputs.cache
+D:\Project_ABeo\OOP_Exercises\lab03\BaiOnTap_3\obj\Debug\net10.0\BaiOnTap_3.sourcelink.json
+D:\Project_ABeo\OOP_Exercises\lab03\BaiOnTap_3\bin\Debug\net10.0\BaiOnTap_3.exe
+D:\Project_ABeo\OOP_Exercises\lab03\BaiOnTap_3\bin\Debug\net10.0\BaiOnTap_3.deps.json
+D:\Project_ABeo\OOP_Exercises\lab03\BaiOnTap_3\bin\Debug\net10.0\BaiOnTap_3.runtimeconfig.json
+D:\Project_ABeo\OOP_Exercises\lab03\BaiOnTap_3\bin\Debug\net10.0\BaiOnTap_3.dll
+D:\Project_ABeo\OOP_Exercises\lab03\BaiOnTap_3\bin\Debug\net10.0\BaiOnTap_3.pdb
+D:\Project_ABeo\OOP_Exercises\lab03\BaiOnTap_3\obj\Debug\net10.0\BaiOnTap_3.dll
+D:\Project_ABeo\OOP_Exercises\lab03\BaiOnTap_3\obj\Debug\net10.0\refint\BaiOnTap_3.dll
+D:\Project_ABeo\OOP_Exercises\lab03\BaiOnTap_3\obj\Debug\net10.0\BaiOnTap_3.pdb
+D:\Project_ABeo\OOP_Exercises\lab03\BaiOnTap_3\obj\Debug\net10.0\BaiOnTap_3.genruntimeconfig.cache
+D:\Project_ABeo\OOP_Exercises\lab03\BaiOnTap_3\obj\Debug\net10.0\ref\BaiOnTap_3.dll
