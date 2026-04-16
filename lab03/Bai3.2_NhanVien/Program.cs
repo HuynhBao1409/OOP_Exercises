@@ -154,15 +154,18 @@ class Program
             Console.Write("Chọn loại: ");
             int loai = int.Parse(Console.ReadLine());
 
-            NhanVien nv;
-            if (loai == 1)
+            NhanVien nv = null;
+            do
             {
-                nv = new NhanVienVanPhong();
-            }
-            else
-            {
-                nv = new NhanVienSanXuat();
-            }
+                if (loai == 1)
+                {
+                    nv = new NhanVienVanPhong();
+                }
+                else
+                {
+                    nv = new NhanVienSanXuat();
+                }
+            } while (nv == null);
             nv.Nhap();
             danhsach.Add(nv);
         }

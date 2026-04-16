@@ -8,7 +8,33 @@ cd .. (về thu mục cha) tạp như BTH
 =====Lưu ý:
 khi nào đề có yêu cầu có ràng buộc,kiểm tra trước khi nhập , tính hợp lê thì dùng private và dùng get,set và xài do while trc khi readline()
 Còn đề ko yêu cầu thì dùng protected là được và phải tạo phương thức:
-	 public GetTenPhuongThuc( ); chứ ko dùng get;set như khi có ràng buộc
+	 public <Kiểu dữ liệu> GetTenPhuongThuc( ); chứ ko dùng get;set như khi có ràng buộc
+
+=== Phương thức ẩn xài new cho lớp con
+=== Lớp abtract là lớp trừu tượng,virtual override là đa hình
+=== Lớp Interface: chỉ để khai báo các phương thức ko chứa code
+==ds.Sort((a,b)=>a.cc.CompareTo(b.cc)); (1 tiêu chí)
+==ds.Sort((a,b)=>{
+	string kq=null;
+	if(a.cc.CompareTo(b.cc)) retun kq;
+	return b.cc.CompareTo(a.cc);
+}); (sắp xếp 2 tiêu chí "ko ra ")
+
+== CompareTo() (dùng trong sắp xếp)
+== Contains() (xóa trùng)
+==StartWith() (tìm ký tự bắt đầu)
+
+VD: 
+interface IThongKe
+{
+    double TinhDoanhThu();  // chỉ khai báo, không có thân hàm
+    void InBaoCao();
+}
+
+class CH:Cuahang,IThongKe //kế thừa như bth
+{
+	public double TinhDoanhThu(){....}
+}
 
 *Visual code: mở Console và triển
 
