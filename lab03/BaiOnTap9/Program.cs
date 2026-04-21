@@ -1,4 +1,40 @@
-﻿using System;
+﻿// 📝 ĐỀ THI GIỮA KỲ — LẬP TRÌNH HƯỚNG ĐỐI TƯỢNG (C#)
+// Thời gian: 75 phút | Được dùng tài liệu | Không trao đổi
+
+// Phần I — Cài đặt các lớp đối tượng (6 điểm)
+
+// 1. Lớp trừu tượng SinhVien (3đ)
+// Fields: mã SV (string), họ tên (string). (0.5đ)
+// Properties ràng buộc khi set: (1đ)
+//   - Mã SV: đúng 8 ký tự
+//   - Họ tên: độ dài > 0
+// Phương thức: (1.5đ)
+//   - Khởi tạo không tham số và có tham số
+//   - Nhap(), Xuat()
+//   - Trừu tượng: TinhDiemTB()
+
+// 2. Lớp SinhVienIT kế thừa SinhVien (1.5đ)
+// Fields bổ sung: điểm Java (double), điểm C# (double). (0.5đ)
+// Properties ràng buộc: điểm trong khoảng [0, 10]. (0.5đ)
+// Override Nhap(), Xuat(), TinhDiemTB(). (0.5đ)
+//   TinhDiemTB = (DiemJava + DiemCSharp) / 2
+
+// 3. Lớp SinhVienKinhTe kế thừa SinhVien (1.5đ)
+// Fields bổ sung: điểm Marketing (double), điểm Kế Toán (double). (0.5đ)
+// Properties ràng buộc: điểm trong khoảng [0, 10]. (0.5đ)
+// Override Nhap(), Xuat(), TinhDiemTB(). (0.5đ)
+//   TinhDiemTB = (2 × DiemMarketing + DiemKeToan) / 3
+
+// Phần II — Chương trình chính (4 điểm)
+// (1đ)   Nhập danh sách n sinh viên (2 ≤ n ≤ 20),
+//         mỗi sinh viên chọn loại IT hoặc Kinh Tế rồi nhập thông tin.
+// (1đ)   In toàn bộ danh sách kèm điểm TB từng sinh viên.
+// (0.5đ) Tìm và in sinh viên có điểm TB cao nhất.
+// (0.5đ) Nhập họ tên, tìm và in sinh viên có họ tên đó
+//         (không phân biệt hoa thường). Thông báo nếu không tìm thấy.
+// (1đ)   Sắp xếp theo điểm TB giảm dần,
+//         nếu bằng nhau thì theo họ tên tăng dần (A-Z). In ra sau sắp xếp.
+using System;
 using System.Collections.Generic;
 
 abstract class SinhVien
@@ -203,8 +239,8 @@ class SinhVienKinhTe : SinhVien
     public SinhVienKinhTe(string maSV, string hoTen, double diemMkt, double diemKeToan)
     : base(maSV, hoTen)
     {
-        DiemKeToan = diemKeToan;
         DiemMkt = diemMkt;
+        DiemKeToan = diemKeToan;
     }
 
     public override void Nhap()
@@ -216,7 +252,7 @@ class SinhVienKinhTe : SinhVien
             Console.Write("Diem Marketing: ");
             if (double.TryParse(Console.ReadLine(), out double nhap) && nhap >= 0.0 && nhap <= 10.0)
             {
-                diemMkt = nhap;
+                DiemMkt = nhap;
                 hopLe = true;
             }
             else
@@ -230,7 +266,7 @@ class SinhVienKinhTe : SinhVien
             Console.Write("Diem Ke toan: ");
             if (double.TryParse(Console.ReadLine(), out double nhap) && nhap >= 0.0 && nhap <= 10.0)
             {
-                diemKeToan = nhap;
+                DiemKeToan = nhap;
                 hopLe = true;
             }
             else
@@ -269,12 +305,11 @@ class Program
         {
             Console.WriteLine($"\nSinhvien {i + 1}");
             Console.WriteLine("Chon: 1|sinh vien IT  2|sinh vien Kte");
-            Console.Write("Chon 1/2: ");
-            int loai = int.Parse(Console.ReadLine());
-
             SinhVien sv = null;
             do
             {
+                Console.Write("Chon 1/2: ");
+                int loai = int.Parse(Console.ReadLine());
 
                 if (loai == 1)
                 {
@@ -308,10 +343,36 @@ class Program
 
         Console.WriteLine("\nSinh vien co diem TB cao nhat");
         max.Xuat();
+        //tim ten sv
+        Console.Write("\nNhap ho ten: ");
+        string hotenTK = Console.ReadLine();
+        bool timThay = false;
 
+        Console.WriteLine($"\nTHONG TIN SINH VIEN CO TEN {hotenTK.ToUpper()}");
+        foreach (var sv in ds)
+        {
+            if (sv.HoTen.ToLower() == hotenTK.ToLower())
+            {
+                sv.Xuat();
+                Console.WriteLine();
+                timThay = true;
+            }
+        }
+        if (!timThay)
+        {
+            Console.WriteLine($"\nKo tim thay ai ten {hotenTK.ToUpper()}");
+        }
 
-        Console.WriteLine("\nDanh sach sinh vien co diem TB giam dan");
-        ds.Sort((a, b) => b.TinhDiemTB().CompareTo(a.TinhDiemTB()));
+        ds.Sort((a, b) =>
+        {
+            int kq = b.TinhDiemTB().CompareTo(a.TinhDiemTB());//giam dan
+            if (kq != 0)//neu ko bang nhau
+            {
+                return kq;
+            }
+            return a.HoTen.CompareTo(b.HoTen);//tang dan
+        });
+        Console.WriteLine("\nDANH SACH SAU KHI SAP XEP QUA 2 TIEU CHI");
         for (int i = 0; i < ds.Count; i++)
         {
             Console.WriteLine($"\nSinhvien {i + 1}");

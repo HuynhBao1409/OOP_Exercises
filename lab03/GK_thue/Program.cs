@@ -173,7 +173,7 @@ class HangXK : HangHoa
         return SoLuong * DonGia * (ThueSuat / 100);
     }
 
-    public override void Nhap()
+    public new void Nhap()
     {
         base.Nhap();
         // thueSuat mặc định 0 hợp lệ luôn → dùng flag
@@ -208,7 +208,7 @@ class HangXK : HangHoa
         } while (!hople);
     }
 
-    public override void Xuat()
+    public new void Xuat()
     {
         base.Xuat();
         Console.WriteLine($"  Số lượng     : {SoLuong}");

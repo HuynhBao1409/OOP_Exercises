@@ -8,23 +8,22 @@ cd .. (về thu mục cha) tạp như BTH
 =====Lưu ý:
 khi nào đề có yêu cầu có ràng buộc,kiểm tra trước khi nhập , tính hợp lê thì dùng private và dùng get,set và xài do while trc khi readline()
 Còn đề ko yêu cầu thì dùng protected là được và phải tạo phương thức:
-	 public <Kiểu dữ liệu> GetTenPhuongThuc( return "tên thuộc tính" ); chứ ko dùng get;set như khi có ràng buộc
+	 public <Kiểu dữ liệu> GetTenPhuongThuc( ); chứ ko dùng get;set như khi có ràng buộc
 
 === Phương thức ẩn xài new cho lớp con
-=== Lớp abtract là lớp trừu tượng
-=== virtual/ override là đa hình
+=== Lớp abtract là lớp trừu tượng,virtual override là đa hình
 === Lớp Interface: chỉ để khai báo các phương thức ko chứa code
 ==ds.Sort((a,b)=>a.cc.CompareTo(b.cc)); (1 tiêu chí)
 ==ds.Sort((a,b)=>{
-	int kq= a.cc.CompareTo(b.cc);
-	if(kq!=0) return kq;
+	string kq=null;
+	if(a.cc.CompareTo(b.cc)) retun kq;
 	return b.cc.CompareTo(a.cc);
 }); (sắp xếp 2 tiêu chí "ko ra ")
 
 == CompareTo() (dùng trong sắp xếp)
 == Contains() (xóa trùng)
-==StartsWith() (tìm ký tự bắt đầu)
-== nhap DateTime = DateTime.ParseExact(Console.ReadLine(), "dd/mm/yyyy", null)
+==StartWith() (tìm ký tự bắt đầu)
+
 VD: 
 interface IThongKe
 {
@@ -47,3 +46,13 @@ Cú pháp: <Tên Lớp> <Tên ĐTượng cần tạo> = new <Tên Lớp>(<Tham s
 	
 		Car car2 = new Car("Ford");//có tham số
        		car2.Print();
+---------------------------HÀM THIẾT LẬP
+[public] <Tên Lớp> ([Danh sách tham số]
+{
+	// Các lệnh khởi tạo cho đối tượng
+}
+VD:file cod ViDu
+---------------------------LỚP TĨNH
+Cú pháp truy cập thành viên tĩnh:
+	 <Tên_lớp>.<Tên_thành_viên_tĩnh>
+VD: Dog.Count;
