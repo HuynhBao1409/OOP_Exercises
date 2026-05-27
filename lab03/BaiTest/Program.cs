@@ -1,20 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
 
-abstract class HopDong
+abstract class SanPham
 {
-    private string maHD;
-    private string tenKH;
-    private int soThang;
+    private string maSP;
+    private string tenSP;
+    private int soLuong;
 
-    public string MaHD
+    public string MaSP
     {
-        get { return maHD; }
+        get { return maSP; }
         set
         {
             if (value.Length == 6)
             {
-                maHD = value;
+                maSP = value;
             }
             else
             {
@@ -22,15 +22,14 @@ abstract class HopDong
             }
         }
     }
-
-    public string TenKH
+    public string TenSP
     {
-        get { return tenKH; }
+        get { return tenSP; }
         set
         {
             if (value.Length > 0)
             {
-                tenKH = value;
+                tenSP = value;
             }
             else
             {
@@ -38,14 +37,14 @@ abstract class HopDong
             }
         }
     }
-    public int SoThang
+    public int SoLuong
     {
-        get { return soThang; }
+        get { return soLuong; }
         set
         {
-            if (value >= 1 && value <= 36)
+            if (value >= 0)
             {
-                soThang = value;
+                soLuong = value;
             }
             else
             {
@@ -54,24 +53,26 @@ abstract class HopDong
         }
     }
 
-    public HopDong() { }
-    public HopDong(string maHD, string tenKH, int soThang)
+    public SanPham() { }
+    public SanPham(string maSP, string tenSP, int soLuong)
     {
-        MaHD = maHD;
-        TenKH = tenKH;
-        SoThang = soThang;
+        MaSP = maSP;
+        TenSP = tenSP;
+        SoLuong = soLuong;
     }
+
+    public abstract double TinhDoanhThu();
 
     public virtual void Nhap()
     {
         bool hopLe = false;
         do
         {
-            Console.Write("Nhap ma HD: ");
+            Console.Write("Ma SP: ");
             string nhap = Console.ReadLine();
             if (nhap.Length == 6)
             {
-                MaHD = nhap;
+                MaSP = nhap;
                 hopLe = true;
             }
             else
@@ -82,11 +83,11 @@ abstract class HopDong
         hopLe = false;
         do
         {
-            Console.Write("Nhap ten KH: ");
+            Console.Write("Ten SP: ");
             string nhap = Console.ReadLine();
             if (nhap.Length > 0)
             {
-                TenKH = nhap;
+                TenSP = nhap;
                 hopLe = true;
             }
             else
@@ -97,10 +98,10 @@ abstract class HopDong
         hopLe = false;
         do
         {
-            Console.Write("Nhap so thang: ");
-            if (int.TryParse(Console.ReadLine(), out int nhap) && nhap >= 1 && nhap <= 36)
+            Console.Write("So luong ton: ");
+            if (int.TryParse(Console.ReadLine(), out int nhap) && nhap >= 0)
             {
-                SoThang = nhap;
+                SoLuong = nhap;
                 hopLe = true;
             }
             else
@@ -109,30 +110,29 @@ abstract class HopDong
             }
         } while (!hopLe);
     }
-    public abstract double TinhGiaTriHD();
 
     public virtual void Xuat()
     {
-        Console.WriteLine($"Ma HD: {MaHD}");
-        Console.WriteLine($"Ten HD: {TenKH}");
-        Console.WriteLine($"So thang: {SoThang}");
+        Console.WriteLine($"Ma SP: {MaSP}");
+        Console.WriteLine($"Ten SP: {TenSP}");
+        Console.WriteLine($"So luong ton SP: {SoLuong}");
     }
 }
 
-class HopDongDichVu : HopDong
+class SanPhamNhapKhau : SanPham
 {
-    private double phiDV;
-    private int mucUT;
-    private double tiLePhat;
+    private double giaNhap;
+    private double loiNhuan;
+    private double thueNhap;
 
-    public double PhiDV
+    public double GiaNhap
     {
-        get { return phiDV; }
+        get { return giaNhap; }
         set
         {
             if (value > 0)
             {
-                phiDV = value;
+                giaNhap = value;
             }
             else
             {
@@ -140,14 +140,14 @@ class HopDongDichVu : HopDong
             }
         }
     }
-    public int MucUT
+    public double LoiNhuan
     {
-        get { return mucUT; }
+        get { return loiNhuan; }
         set
         {
-            if (value >= 1 && value <= 5)
+            if (value >= 5 && value <= 80)
             {
-                mucUT = value;
+                loiNhuan = value;
             }
             else
             {
@@ -155,14 +155,14 @@ class HopDongDichVu : HopDong
             }
         }
     }
-    public double TiLePhat
+    public double ThueNhap
     {
-        get { return tiLePhat; }
+        get { return thueNhap; }
         set
         {
-            if (value >= 0 && value <= 50)
+            if (value >= 0 && value <= 40)
             {
-                tiLePhat = value;
+                thueNhap = value;
             }
             else
             {
@@ -171,13 +171,13 @@ class HopDongDichVu : HopDong
         }
     }
 
-    public HopDongDichVu() : base() { }
-    public HopDongDichVu(string maHD, string tenKH, int soThang, double phiDV, int mucUT, double tiLePhat)
-    : base(maHD, tenKH, soThang)
+    public SanPhamNhapKhau() : base() { }
+    public SanPhamNhapKhau(string maSP, string tenSP, int soLuong, double giaNhap, double loiNhuan, double thueNhap)
+    : base(maSP, tenSP, soLuong)
     {
-        PhiDV = phiDV;
-        MucUT = mucUT;
-        TiLePhat = tiLePhat;
+        GiaNhap = giaNhap;
+        LoiNhuan = loiNhuan;
+        ThueNhap = thueNhap;
     }
 
     public override void Nhap()
@@ -186,10 +186,10 @@ class HopDongDichVu : HopDong
         bool hopLe = false;
         do
         {
-            Console.Write("Nhap phi dich vu: ");
+            Console.Write("Nhap gia nhap: ");
             if (double.TryParse(Console.ReadLine(), out double nhap) && nhap > 0)
             {
-                PhiDV = nhap;
+                GiaNhap = nhap;
                 hopLe = true;
             }
             else
@@ -200,10 +200,10 @@ class HopDongDichVu : HopDong
         hopLe = false;
         do
         {
-            Console.Write("Nhap muc uu tien: ");
-            if (int.TryParse(Console.ReadLine(), out int nhap) && nhap >= 1 && nhap <= 5)
+            Console.Write("Nhap ti le loi nhuan: ");
+            if (double.TryParse(Console.ReadLine(), out double nhap) && nhap >= 5 && nhap <= 80)
             {
-                MucUT = nhap;
+                LoiNhuan = nhap;
                 hopLe = true;
             }
             else
@@ -211,14 +211,13 @@ class HopDongDichVu : HopDong
                 Console.WriteLine("Loi");
             }
         } while (!hopLe);
-
         hopLe = false;
         do
         {
-            Console.Write("Nhap ti le phat: ");
-            if (double.TryParse(Console.ReadLine(), out double nhap) && nhap >= 0 && nhap <= 50)
+            Console.Write("Nhap thue nhap khau: ");
+            if (double.TryParse(Console.ReadLine(), out double nhap) && nhap >= 0 && nhap <= 40)
             {
-                TiLePhat = nhap;
+                ThueNhap = nhap;
                 hopLe = true;
             }
             else
@@ -228,23 +227,19 @@ class HopDongDichVu : HopDong
         } while (!hopLe);
     }
 
-    public override double TinhGiaTriHD()
+    public override double TinhDoanhThu()
     {
-        return PhiDV * SoThang;
-    }
-    public double TinhPhiHuy()
-    {
-        return TinhGiaTriHD() * TiLePhat / 100;
+        double giaBan = GiaNhap * (1 + LoiNhuan / 100) + GiaNhap * ThueNhap / 100;
+        return SoLuong * giaBan;
     }
 
     public override void Xuat()
     {
         base.Xuat();
-        Console.WriteLine($"Phi dich vu: {PhiDV:N0} vnd");
-        Console.WriteLine($"Muc do uu tien: {MucUT}");
-        Console.WriteLine($"Ti le phat: {TiLePhat:F2} %");
-        Console.WriteLine($"Gia tri HD: {TinhGiaTriHD():N0} vnd");
-        Console.WriteLine($"Phi Phat HD: {TinhPhiHuy():N0} vnd");
+        Console.WriteLine($"Gia nhap: {GiaNhap:N0} vnd");
+        Console.WriteLine($"Loi nhuan: {LoiNhuan} %");
+        Console.WriteLine($"Thue Nhap: {ThueNhap} %");
+        Console.WriteLine($"Doanh Thu: {TinhDoanhThu():N0} vnd");
     }
 }
 
@@ -255,7 +250,7 @@ class Program
         int n = 0;
         do
         {
-            Console.Write("Nhap so luong: ");
+            Console.Write("Nhap n: ");
             int.TryParse(Console.ReadLine(), out n);
             if (n < 2 || n > 20)
             {
@@ -263,86 +258,78 @@ class Program
             }
         } while (n < 2 || n > 20);
 
-        List<HopDongDichVu> ds = new List<HopDongDichVu>();
+        List<SanPhamNhapKhau> ds = new List<SanPhamNhapKhau>();
         for (int i = 0; i < n; i++)
         {
-            Console.WriteLine($"\nHD {i + 1}");
-            HopDongDichVu hd = new HopDongDichVu();
-            hd.Nhap();
-            ds.Add(hd);
+            Console.WriteLine($"\nSP {i + 1}");
+            SanPhamNhapKhau sp = new SanPhamNhapKhau();
+            sp.Nhap();
+            ds.Add(sp);
         }
 
-        Console.WriteLine($"\nDANH SACH CAC HOP DONG");
         for (int i = 0; i < ds.Count; i++)
         {
-            Console.WriteLine($"\nHop Dong {i + 1}");
+            Console.WriteLine($"\nSP {i + 1}");
             ds[i].Xuat();
         }
 
-        HopDongDichVu min = ds[0];
-        HopDongDichVu max = ds[0];
-
-        foreach (var hd in ds)
+        double tong = 0;
+        foreach (var sp in ds)
         {
-            if (hd.TinhGiaTriHD() < min.TinhGiaTriHD()) min = hd;
-            if (hd.TinhGiaTriHD() > max.TinhGiaTriHD()) max = hd;
+            tong += sp.TinhDoanhThu();
         }
 
-        Console.WriteLine($"\nHOP DONG CO GIA TRI CAO NHAT");
-        max.Xuat();
-        Console.WriteLine($"\nHOP DONG CO GIA TRI THAP NHAT");
-        min.Xuat();
+        double trungBinh = tong / ds.Count;
 
-        Console.Write("\nNhap muc do uu tien: ");
-        int ut = int.Parse(Console.ReadLine());
-        int dem = 0;
-        double tongGiaTri = 0;
+        Console.WriteLine($"\nTONG DOANH THU: {tong:N0} - TRUNG BINH: {trungBinh:N0}");
 
-        foreach (var hd in ds)
+        Console.WriteLine($"\nDANH SACH SAN PHAM HET HANG");
+        bool timThay = false;
+        foreach (var sp in ds)
         {
-            if (hd.MucUT == ut)
+            if (sp.SoLuong == 0)
             {
-                dem++;
-                tongGiaTri += hd.TinhGiaTriHD();
+                timThay = true;
+                sp.Xuat();
+                Console.WriteLine();
             }
         }
+        if (!timThay) Console.WriteLine("ko tim thay");
 
-        if (dem == 0)
+        ds.Sort((a, b) =>
         {
-            Console.WriteLine("Ko co hop dong nao");
-        }
-        else
-        {
-            Console.WriteLine($"So hop dong muc {ut}: {dem}");
-            Console.WriteLine($"Tong gia tri hop dong muc: {tongGiaTri:N0} vnd");
-        }
+            int kq = b.TinhDoanhThu().CompareTo(a.TinhDoanhThu());
+            if (kq != 0)
+            {
+                return kq;
+            }
+            return a.TenSP.CompareTo(b.TenSP);
+        });
 
-        ds.Sort((a, b) => b.TinhGiaTriHD().CompareTo(a.TinhGiaTriHD()));
-        Console.WriteLine($"\nDANH SACH CAC HOP DONG SAU KHI SAP XEP");
+        Console.WriteLine($"\nDANH SACH SAU KHI SAP XEP");
         for (int i = 0; i < ds.Count; i++)
         {
-            Console.WriteLine($"\nHop Dong {i + 1}");
+            Console.WriteLine($"\nSan Pham {i + 1}");
             ds[i].Xuat();
         }
 
-        List<HopDongDichVu> dsmoi = new List<HopDongDichVu>();
-        List<string> madagap = new List<string>();
+        List<SanPhamNhapKhau> dsMoi = new List<SanPhamNhapKhau>();
+        List<string> maDaGap = new List<string>();
 
-        foreach (var hd in ds)
+        foreach (var sp in ds)
         {
-            if (!madagap.Contains(hd.MaHD))
+            if (!maDaGap.Contains(sp.MaSP))
             {
-                dsmoi.Add(hd);
-                madagap.Add(hd.MaHD);
+                dsMoi.Add(sp);
+                maDaGap.Add(sp.MaSP);
             }
         }
 
-        Console.WriteLine($"\nDANH SACH CAC HOP DONG SAU KHI XOA TRUNG");
-        for (int i = 0; i < dsmoi.Count; i++)
+        Console.WriteLine($"\nDANH SACH SAU KHI Xoa");
+        for (int i = 0; i < dsMoi.Count; i++)
         {
-            Console.WriteLine($"\nHop Dong {i + 1}");
-            dsmoi[i].Xuat();
+            Console.WriteLine($"\nSan Pham {i + 1}");
+            dsMoi[i].Xuat();
         }
-
     }
 }

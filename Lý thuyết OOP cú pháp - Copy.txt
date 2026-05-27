@@ -37,22 +37,101 @@ class CH:Cuahang,IThongKe //kế thừa như bth
 }
 
 *Visual code: mở Console và triển
+================CAU Hoi Phỏng vấn chung (React-Node.js+TypeScript)=====================
+PART 1: Các câu hỏi chung & Phong cách làm việc
+Câu 1: Em hãy giới thiệu bản thân và con app tâm đắc nhất của mình?
+Cách trả lời: "Dạ em chào anh/chị, em tên là [...], hiện tại em đang sinh viên vừa ra trường khoa CNTT.  Em đã từng có khoảng thời gian thực tập tại VNPT và sau đó là một Startup. Tại Startup này, dù công ty gặp biến cố lớn về tài chính từ phía ban điều hành và sau đó phá sản, nhưng em may mắn được làm việc với các anh chị đồng nghiệp rất giỏi và có tâm, em được hỗ trợ và học hỏi rất nhiều về tư duy làm sản phẩm.
 
-************************
-Tạo đối tượng
-Cú pháp: <Tên Lớp> <Tên ĐTượng cần tạo> = new <Tên Lớp>(<Tham số qq j đấy>);
-	VD: Dog mydog = new Dog(); //Ko tham số
-		mydog.Name = ("Cau Vàng");
-	
-		Car car2 = new Car("Ford");//có tham số
-       		car2.Print();
----------------------------HÀM THIẾT LẬP
-[public] <Tên Lớp> ([Danh sách tham số]
-{
-	// Các lệnh khởi tạo cho đối tượng
-}
-VD:file cod ViDu
----------------------------LỚP TĨNH
-Cú pháp truy cập thành viên tĩnh:
-	 <Tên_lớp>.<Tên_thành_viên_tĩnh>
-VD: Dog.Count;
+Sau biến cố đó, để chủ động lo chi phí sinh hoạt, em đã tạm thời đi làm sale tại một siêu thị Hàn Quốc trong nửa năm. Mục tiêu của em khi vào đó ngoài thu nhập là để tự rèn luyện kỹ năng mềm và vượt qua sự rụt rè trong giao tiếp. Tại đây, em được va chạm với nhiều khách hàng, kể cả người nước ngoài, giúp em rèn được phản xạ tiếng Anh nhanh và kỹ năng giao tiếp tốt hơn trước rất nhiều.
+
+Khi tích lũy được một khoản chi phí nhỏ và nhận thấy bản thân đã đạt được mục tiêu rèn luyện kỹ năng mềm, em quyết định dừng lại để quay trở lại con đường IT. Để tránh bị hổng kiến thức trong nửa năm đó, em đã tự code một App xem phim trên iOS bằng React Native (Expo), TypeScript và Appwrite. Hiện tại, em đã sẵn sàng 100% năng lượng để cống hiến cho một vị trí chính thức."
+
+Câu 2: Em tự đánh giá đâu là Ưu điểm và Nhược điểm lớn nhất của mình?
+Mục tiêu: Đưa ra đúng những gì bạn mô tả, nhưng dùng từ ngữ chuyên nghiệp để nhà tuyển dụng thấy bạn hiểu rõ bản thân.
+
+Cách trả lời ghi điểm:
+
+Về Ưu điểm (Tập trung cao độ & Nhớ dai): "Điểm mạnh lớn nhất của em là khả năng tập trung cao độ (Deep Work). Khi đã vào guồng code, em có thể ngồi làm việc liên tục nhiều giờ liền mà không bị phân tâm bởi xung quanh. 
+Về Nhược điểm (Lo lắng tiến độ & Không nhớ tên học thuật): "Còn nhược điểm của em là đôi khi em bị tâm lý lo lắng, bồn chồn về mặt tiến độ khi đụng phải một task quá mới hoặc quá khó. Vì sợ mình làm lâu sẽ ảnh hưởng đến cả Project của team, nên em thường có xu hướng phải bắt tay vào làm và chuẩn bị trước dù dự án đó mới chỉ ở gian đoạn planning thôi, kiểu
+e chuẩn bị trc trường hợp sẽ xảy ra để giải quyết xong cục đá đó thì mới yên tâm được.
+
+Một điểm nữa là em thiên về thực hành nên đôi khi em không nhớ chính xác tên gọi học thuật của các hàm hay các phương thức trong sách vở. Nhưng bù lại, em nhớ rất rõ cách thức hoạt động và cấu trúc của nó để lôi ra áp dụng đúng chỗ."
+
+Câu 3: Anh thấy em có xu hướng lo lắng khi gặp Task mới vì sợ chậm tiến độ, vậy trong dự án thực tế em kiểm soát sự lo lắng này thế nào để đạt hiệu quả?
+Mục tiêu: Chứng minh bạn lo lắng nhưng có trách nhiệm, không để sự lo lắng làm hỏng việc.
+
+Cách trả lời ghi điểm:
+"Dạ, sự lo lắng của em vì bản thân em học ko tốt so vs người khác nên việc em lo lắng cũng  sợ ảnh hưởng đến tiến độ của team. Cùng với mong muốn kiểm soát và làm chủ 1 dự án để có thể hiểu rõ về nó
+ và không bị rối, em thường chia nhỏ bài toán:
+
+Bth khi nhìn vào một cái Task tổng thể,em bị ovtk nên em thường sẽ tìm hiểu vs setup trước tất cả cả trường hợp sẽ xảy ra kiủ như là: làm về cái này sẽ cần cbi kiến thức j? sẽ dùng công nghệ gì cho việc đó? nếu như khó so với bản thân hiện tại thì sẽ làm gì trc
+
+, sau khi em nắm dc bức tranh toàn cảnh rồi e sẽ chia nhỏ nó ra thành từng bước nhỏ (ví dụ: làm UI là dựng giao diện thô sao đó thêm chỉnh sửa chi tiết thêm chức năng gì..., sau đó thử là kết nối API xem ổn ch nếu có xong đó mới bắt đầu vô BE, bước 3 là bắt lỗi...). 
+Việc thấy mình hoàn thành từng bước nhỏ sẽ giúp em bớt bồn chồn hơn. với khi em nắm rõ rồi lỡ có rủi ro gi thì em có thể báo cho team hoặc a/c đi trước giúp định hướng lại kịp thời
+
+Câu 4: (Hỏi tinh tế về vụ Startup) Công ty Startup cũ của em có tiếng xấu trên mạng, em nghĩ sao về điều này?
+Mục tiêu: Thể hiện thái độ chuyên nghiệp, không nói xấu công ty cũ nhưng tách biệt rõ ràng giữa con người và tổ chức.
+
+Cách trả lời ghi điểm:
+"Dạ, em cũng có biết về những thông tin đó. Tuy nhiên, theo góc nhìn trực tiếp của em khi làm việc tại đó, vấn đề tiêu cực chỉ xuất phát từ một cá nhân trong ban điều hành. Còn toàn bộ đội ngũ kỹ thuật và các đồng nghiệp làm việc trực tiếp với em đều là những người rất giỏi, tử tế và họ cũng là nạn nhân bị quỵt lương giống như em.
+
+Em không hối hận vì đã làm việc ở đó, bởi vì e lúc đó em ko có gì để mất cả e chỉ xác định ở lại đây để học dc những gì cần học thôi mà cũng chính các anh chị đồng nghiệp đã hỗ trợ, dạy bảo và cho em những trải nghiệm thực tế đầu đời rất giá trị. Biến cố đó xảy ra giúp em trưởng thành hơn, cũng giúp e thấy dc mik đã thiếu sót những gì từ đó rút ra bài học cho bản thân em 
+Câu5: Khi đụng phải một bug khó hoặc một công nghệ hoàn toàn mới, em sẽ xử lý thế nào?
+Cách trả lời: "Vì phong cách của em là làm thực tế nên việc gặp bug hay công nghệ mới là chuyện hằng ngày. Quy trình của em là: Đầu tiên, đọc kỹ thông báo lỗi (Error Log) trong VS Code hoặc console của Expo để biết chính xác lỗi xảy ra ở dòng nào. Tiếp theo, em tận dụng Google, Stack Overflow và AI để tìm các case tương tự.
+
+Cuối cùng, em sẽ viết thử một đoạn code nhỏ tách biệt ra để test giải pháp trước khi đập vào app chính. Nếu tốn khoảng 1-2 tiếng nghiên cứu mà vẫn bế tắc, em sẽ chủ động tổng hợp lại những cách em đã thử và nhờ các anh đi trước định hướng giúp để tránh làm chậm tiến độ chung của team."
+
+=================================
+PART 2: Câu hỏi chuyên môn về React Native & Expo (iOS)
+
+
+Câu 1: Tại sao em lại chọn dùng Expo để phát triển app thay vì dùng React Native CLI truyền thống?
+Cách trả lời: "Dạ, lý do lớn nhất là tốc độ phát triển dự án và sự tiện lợi. Nếu dùng React Native CLI để làm app iOS, em bắt buộc phải cấu hình Xcode rất phức tạp, và gần như không thể test app trên máy thật nếu không có máy Mac.
+
+Khi dùng Expo, em có thể tận dụng Expo Go để quét mã QR và chạy thử app trực tiếp trên chiếc iPhone của mình ngay lập tức (kể cả khi code trên máy tính Windows). Expo cũng quản lý hộ em các phần cấu hình phức tạp như Splash Screen, App Icon, Phân quyền (Permissions)... giúp em làm được nhiều tính năng hơn trong thời gian ngắn.."
+
+Câu 2: Em hiểu thế nào về file .ts và .tsx trong dự án của mình? Tại sao em chọn TypeScript thay vì JavaScript?
+Cách trả lời: * .ts là các file em chỉ viết logic thuần (như hàm call API sang TMDB, hàm xử lý chuỗi, cấu hình Appwrite). Còn .tsx là các file vừa chứa logic vừa chứa giao diện của App (có các thẻ UI của React Native như <View>, <Text>, <Image>).
+
+Em chọn TypeScript vì nó có Static Typing (kiểu dữ liệu tĩnh). Nếu em dùng JavaScript thường, lỡ gõ sai tên thuộc tính (như movie.title thành movie.Title) thì phải đợi lúc mở app lên bấm vào mới biết bị crash. Còn với TypeScript, em định nghĩa rõ một interface Movie, nếu gõ sai là trình biên dịch báo lỗi đỏ ngay trong lúc viết code, giúp em sửa lỗi cực kỳ nhanh."
+
+Câu 3: Khi làm danh sách phim, em dùng ScrollView hay FlatList? Hai cái này khác gì nhau?
+Trả lời kiểu "Thợ cày": "Lúc đầu mới làm, em quen tay dùng ScrollView cho tiện, nhưng khi kéo mười mấy trang phim từ TMDB về là app bắt đầu lag và đứng hình. Em lên mạng mò thì biết mình phải đổi sang FlatList. Em cũng không nhớ rõ định nghĩa học thuật của nó, nhưng khi em dùng FlatList, em thấy app nó mượt hẳn vì nó chỉ load những bộ phim đang hiện trên màn hình, cuộn tới đâu load tới đó, đỡ tốn RAM máy."
+
+Câu 4: Trong app phim, tính năng xem video rất nặng. Em làm thế nào để tối ưu tốc độ tải trang, không bị giật lag khi user lướt xem danh sách phim?
+Cách trả lời: "Dạ, em tối ưu bằng 2 cách:
+
+Về phía TMDB API: Em tận dụng việc họ cho phép cấu hình kích thước ảnh qua URL (như w200, w500). Ở màn hình danh sách phim, em chỉ gọi ảnh size nhỏ w200 hoặc w342 để app load cực nhanh và đỡ tốn RAM điện thoại. Khi nào user bấm vào xem chi tiết phim, em mới load ảnh to w1280 làm background.
+
+Về phía React Native: Thay vì dùng ScrollView thông thường (nó sẽ load tất cả các phim cùng một lúc gây tràn bộ nhớ), em bắt buộc phải dùng FlatList. FlatList có cơ chế Lazy Loading, nó chỉ render các bộ phim đang hiển thị trên màn hình, người dùng cuộn chuột đến đâu thì mới load tiếp đến đó."
+
+
+Câu 5: Làm sao em bảo mật được cái API Key của TMDB khi viết app bằng Expo?
+Trả lời kiểu "Thợ cày": "Dạ, vì em sợ người ta dịch ngược file app để ăn trộm API Key của em, nên em không bao giờ gõ thẳng cái Key đó vào code React Native. Em dựng một con Backend trung gian bằng TypeScript (Node.js), giấu cái Key đó dưới file .env ở Backend. App Expo của em chỉ việc gọi lên Backend của em, rồi Backend đứng ra call hộ bên TMDB rồi trả data về. Việc này làm em tốn công viết thêm một con Backend nữa, nhưng em chịu cày để app nó an toàn."
+
+
+Câu 6: Khi ứng dụng di động bị mất mạng (hoặc mạng chập chờn), em xử lý thế nào để app không bị crash hoặc hiện màn hình trắng?
+Cách trả lời: "Em dùng thư viện NetInfo để lắng nghe trạng thái mạng của thiết bị. Nếu mất mạng, em sẽ hiển thị một thông báo hoặc một màn hình báo 'Mất kết nối' kèm nút 'Thử lại' để giữ trải nghiệm người dùng.
+
+Đồng thời, với những dữ liệu ít thay đổi như danh sách phim yêu thích (Watchlist) lấy từ Appwrite, em sử dụng cơ chế lưu trữ cục bộ trên máy bằng AsyncStorage. Khi có mạng, em tải dữ liệu về và lưu một bản vào máy. Nếu mất mạng, app vẫn lôi dữ liệu cũ trong AsyncStorage ra hiển thị được cho user xem tạm."
+
+Câu 7: Lúc làm tính năng xem phim, khi user bấm ẩn app xuống hoặc có cuộc gọi đến, làm sao em dừng (pause) cái video lại?
+Trả lời kiểu "Thợ cày": "Dạ case này lúc test em bị dính suốt, ẩn app đi mà nhạc phim vẫn chạy nền. Em mò ra cái thư viện AppState của React Native để theo dõi xem app đang mở hay đang bị ẩn. Cứ khi nào AppState báo là app bị ẩn xuống (background) hoặc có cuộc gọi chen vào, em viết một dòng code để ép cái trình phát video đổi trạng thái sang Pause ngay lập tức."
+
+Câu 9: Khi giao diện React Native bị load lại liên tục (Re-render) làm app bị chậm, em xử lý thế nào?
+Trả lời kiểu "Thợ cày": "Thú thật là em không quá giỏi mấy cái tối ưu sâu bằng useMemo hay useCallback vì lý thuyết nó lằng nhằng. Cách làm của em là em chia nhỏ các Component ra. Ví dụ cái nút Like hoặc cái ô Comment em sẽ tách nó thành một file riêng biệt. Khi user gõ chữ vào ô Comment, chỉ có đúng cái ô đó bị load lại thôi, còn nguyên cả cái màn hình phim và danh sách bên dưới không bị ảnh hưởng, nhờ vậy app chạy nhẹ hơn hẳn."
+
+PART 3: Câu hỏi về Kết nối hệ thống (Appwrite & TMDB API)
+Câu 1: Tại sao em lại viết code để gọi API qua con Backend TypeScript trung gian, mà không để React Native gọi thẳng lên TMDB API luôn cho nhanh?
+Cách trả lời: "Dạ, cái này e chưa phát triển tới vì muốn tập trung làm nhanh các tính năng giao diện trước nên em đang để React Native gọi thẳng lên TMDB API,
+Để khắc phục triệt để là em sẽ thêm một con Backend trung gian . Em sẽ chuyển cái API Key đó sang file .env nằm trên Server Backend của mình. app Expo chỉ đóng vai trò gửi yêu cầu lên Backend của em, rồi con Backend mới vào để lấy Key và đứng ra gọi hộ sang TMDB. Như vậy thì cái Key mới được giấu kín hoàn toàn trên Server và an toàn tuyệt đối ạ."
+
+Câu 2: Em đánh giá thế nào về việc dùng Appwrite cho app Mobile này?
+Cách trả lời: "Dạ, Appwrite là một giải pháp BaaS (Backend-as-a-Service) cực kỳ tuyệt vời cho các lập trình viên thiên về thực chiến như em. Nó giúp em không cần tốn thời gian tự dựng server và database từ đầu. Em chỉ cần cài SDK của Appwrite vào app là đã có sẵn các tính năng rất mạnh: Đăng ký/Đăng nhập (Authentication) bảo mật cao, và một hệ thống cơ sở dữ liệu NoSQL (Database) dạng các bộ sưu tập (Collections) giúp em lưu thông tin Watchlist hay bình luận của user rất dễ dàng và nhanh chóng."
+
+PART 4: Câu hỏi ngược dành cho nhà tuyển dụng (Cuối buổi phỏng vấn)
+Khi họ hỏi: "Em có câu hỏi nào cho anh/chị không?", hãy hỏi 2 câu này để thể hiện tinh thần cầu tiến:
+
+"Dạ, nếu em được nhận vào vị trí này, thì trong những tháng đầu tiên, em sẽ được giao phụ trách các module công việc cụ thể nào, và team mình có quy trình training hoặc các anh Senior kèm cặp em không ạ?"
+
+"Anh/chị có thể chia sẻ giúp em về các công nghệ hoặc các thư viện quản lý trạng thái (như Redux, Zustand...) mà dự án hiện tại của công ty đang dùng không? Em muốn biết trước để nếu có cơ hội nhận việc, em sẽ chủ động tự học và làm quen trước ở nhà để khi vào là bắt tay làm được luôn."

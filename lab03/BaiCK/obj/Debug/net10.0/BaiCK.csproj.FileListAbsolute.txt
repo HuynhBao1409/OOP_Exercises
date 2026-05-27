@@ -1,0 +1,15 @@
+D:\Project_ABeo\OOP_Exercises\lab03\BaiCK\bin\Debug\net10.0\BaiCK.exe
+D:\Project_ABeo\OOP_Exercises\lab03\BaiCK\bin\Debug\net10.0\BaiCK.deps.json
+D:\Project_ABeo\OOP_Exercises\lab03\BaiCK\bin\Debug\net10.0\BaiCK.runtimeconfig.json
+D:\Project_ABeo\OOP_Exercises\lab03\BaiCK\bin\Debug\net10.0\BaiCK.dll
+D:\Project_ABeo\OOP_Exercises\lab03\BaiCK\bin\Debug\net10.0\BaiCK.pdb
+D:\Project_ABeo\OOP_Exercises\lab03\BaiCK\obj\Debug\net10.0\BaiCK.GeneratedMSBuildEditorConfig.editorconfig
+D:\Project_ABeo\OOP_Exercises\lab03\BaiCK\obj\Debug\net10.0\BaiCK.AssemblyInfoInputs.cache
+D:\Project_ABeo\OOP_Exercises\lab03\BaiCK\obj\Debug\net10.0\BaiCK.AssemblyInfo.cs
+D:\Project_ABeo\OOP_Exercises\lab03\BaiCK\obj\Debug\net10.0\BaiCK.csproj.CoreCompileInputs.cache
+D:\Project_ABeo\OOP_Exercises\lab03\BaiCK\obj\Debug\net10.0\BaiCK.sourcelink.json
+D:\Project_ABeo\OOP_Exercises\lab03\BaiCK\obj\Debug\net10.0\BaiCK.dll
+D:\Project_ABeo\OOP_Exercises\lab03\BaiCK\obj\Debug\net10.0\refint\BaiCK.dll
+D:\Project_ABeo\OOP_Exercises\lab03\BaiCK\obj\Debug\net10.0\BaiCK.pdb
+D:\Project_ABeo\OOP_Exercises\lab03\BaiCK\obj\Debug\net10.0\BaiCK.genruntimeconfig.cache
+D:\Project_ABeo\OOP_Exercises\lab03\BaiCK\obj\Debug\net10.0\ref\BaiCK.dll

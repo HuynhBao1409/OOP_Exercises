@@ -17,7 +17,8 @@
 
 
 // 2. Lớp CauThuChuyenNhuong kế thừa CauThu (3đ)
-// Fields bổ sung: tên câu lạc bộ (string), phí chuyển nhượng (double, đơn vị triệu euro), số năm hợp đồng (int). (0.5đ)
+// Fields bổ sung: tên câu lạc bộ (string), phí chuyển nhượng (double, đơn vị triệu euro), 
+// số năm hợp đồng (int). (0.5đ)
 // Properties ràng buộc: (0.5đ)
 
 // Phí chuyển nhượng: > 0

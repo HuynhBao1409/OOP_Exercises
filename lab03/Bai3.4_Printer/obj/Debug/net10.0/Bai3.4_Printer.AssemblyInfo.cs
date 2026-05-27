@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Bai3.4_Printer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f9d0a0c4463a935eaeca0038a123ed82681d8de7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+72061a585b4e21e638f745b16af79e1519ce301f")]
 [assembly: System.Reflection.AssemblyProductAttribute("Bai3.4_Printer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Bai3.4_Printer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

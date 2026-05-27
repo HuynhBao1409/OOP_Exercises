@@ -1,0 +1,15 @@
+D:\Project_ABeo\OOP_Exercises\lab03\BaiCK14\bin\Debug\net10.0\BaiCK14.exe
+D:\Project_ABeo\OOP_Exercises\lab03\BaiCK14\bin\Debug\net10.0\BaiCK14.deps.json
+D:\Project_ABeo\OOP_Exercises\lab03\BaiCK14\bin\Debug\net10.0\BaiCK14.runtimeconfig.json
+D:\Project_ABeo\OOP_Exercises\lab03\BaiCK14\bin\Debug\net10.0\BaiCK14.dll
+D:\Project_ABeo\OOP_Exercises\lab03\BaiCK14\bin\Debug\net10.0\BaiCK14.pdb
+D:\Project_ABeo\OOP_Exercises\lab03\BaiCK14\obj\Debug\net10.0\BaiCK14.GeneratedMSBuildEditorConfig.editorconfig
+D:\Project_ABeo\OOP_Exercises\lab03\BaiCK14\obj\Debug\net10.0\BaiCK14.AssemblyInfoInputs.cache
+D:\Project_ABeo\OOP_Exercises\lab03\BaiCK14\obj\Debug\net10.0\BaiCK14.AssemblyInfo.cs
+D:\Project_ABeo\OOP_Exercises\lab03\BaiCK14\obj\Debug\net10.0\BaiCK14.csproj.CoreCompileInputs.cache
+D:\Project_ABeo\OOP_Exercises\lab03\BaiCK14\obj\Debug\net10.0\BaiCK14.sourcelink.json
+D:\Project_ABeo\OOP_Exercises\lab03\BaiCK14\obj\Debug\net10.0\BaiCK14.dll
+D:\Project_ABeo\OOP_Exercises\lab03\BaiCK14\obj\Debug\net10.0\refint\BaiCK14.dll
+D:\Project_ABeo\OOP_Exercises\lab03\BaiCK14\obj\Debug\net10.0\BaiCK14.pdb
+D:\Project_ABeo\OOP_Exercises\lab03\BaiCK14\obj\Debug\net10.0\BaiCK14.genruntimeconfig.cache
+D:\Project_ABeo\OOP_Exercises\lab03\BaiCK14\obj\Debug\net10.0\ref\BaiCK14.dll
